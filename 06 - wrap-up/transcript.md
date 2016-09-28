@@ -24,3 +24,9 @@ Micro:bit and MicroPython Help
 http://microbit-micropython.readthedocs.io/en/latest/tutorials/
 
 Sonic Pi
+
+Hour of Code
+https://code.org/
+
+Code Club
+https://www.codeclub.org.uk/
