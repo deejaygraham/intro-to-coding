@@ -25,7 +25,14 @@ http://microbit-micropython.readthedocs.io/en/latest/tutorials/
 
 Sonic Pi
 
+HTML
+Sarah Frisk comic about coding web pages:
+http://monstermarkupmanual.com/
+
+
+
 Hour of Code
+Lesson plans, advice on organizing one-off events
 https://code.org/
 
 Code Club
