@@ -23,7 +23,15 @@ http://www.kodugamelab.com/
 Micro:bit and MicroPython Help
 http://microbit-micropython.readthedocs.io/en/latest/tutorials/
 
+Microbit for Primary Schools:
+http://mb4ps.co.uk/
+
+Multi Wing Span - Microbit examples, games 
+http://www.multiwingspan.co.uk/micro.php
+
+
 Sonic Pi
+http://sonic-pi.net/
 
 HTML
 Sarah Frisk comic about coding web pages:
