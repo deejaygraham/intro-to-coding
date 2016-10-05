@@ -17,7 +17,7 @@ We're going to play, break things and put them back together. We'll make lots of
 
 ## History
 
-
+Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?
 
 ## Unplugged
 
