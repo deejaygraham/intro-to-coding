@@ -13,11 +13,15 @@ My vision for this afternoon is to bring you up to date on the last 200 years of
 
 I don't want to spend any longer than necessary talking today, what I would like is to explain some things, have you tinker and explore and feel comfortable enough that you aren't just following a list of instructions but will begin to understand what it's all about.
 
+Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?
+
 We're going to play, break things and put them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some things. We'll understand what we are doing and figure together how to fix them. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time to get used to and  
 
 ## History
 
-Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?
+
+
+
 
 ## Unplugged
 
@@ -33,13 +37,26 @@ We don't need a computer or any electronics
 ## Micro:bit
 
 
+
 ## Sonic Pi
+
+Only if we have enough time.
+
 
 
 ## Review
+
 
 
 ## Outro
 
 
 ## Resources
+
+### Books
+
+The Pattern on the Stone, W. Daniel Hillis
+
+Agile thinking and learning, Andy Hunt, Pragmatic programmers
+
+### Websites
