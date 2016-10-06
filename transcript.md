@@ -61,10 +61,24 @@ make him
 
 10 minutes
 
+MS advanced game platform. Targeted at older children but still drag, drop visual
+coding. Only seems to be windows specific. Not website version app.
+
+
 ## Micro:bit
 
 1 hour
 
+New hardware platform - tiny board (a bit like the raspberry pi) but with bluetooth,
+ compass, tiny display, accelerometer. Runs a number of different programming languages
+ including Micro Python.
+
+ We will try running some simple games and programs and look at how this text based
+ languages are different from the visual ones we've been looking at up to now.
+
+ Download from http://codewith.me. connect ot pc with usb cable.
+
+ Type code into window and press flash to download.
 
 ## Sonic Pi
 
@@ -76,6 +90,22 @@ Only if we have enough time.
 ## Review
 
 10 minutes
+
+What have we done today?
+
+history
+
+Running unplugged sessions
+
+Sequencing
+algorithms
+Selection
+Iteration
+Variables
+
+How to incorporate some o these things into your lesson plans and have a
+appreciation for what it takes to understand what is going on inside the computer.
+
 
 
 ## Outro
@@ -110,15 +140,17 @@ http://scratch.mit.edu
 Kodu
 http://www.kodugamelab.com/
 
+Micro:bit
+http://codewith.mu/
+
+
 Micro:bit and MicroPython Help
 http://microbit-micropython.readthedocs.io/en/latest/index.html
 
-Microbit for Primary Schools:
-http://mb4ps.co.uk/
+Microbit for Primary Schools: http://mb4ps.co.uk/
 
 Multi Wing Span - Microbit examples, games
 http://www.multiwingspan.co.uk/micro.php
-
 
 Sonic Pi
 http://sonic-pi.net/
