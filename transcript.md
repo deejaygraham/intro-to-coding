@@ -19,36 +19,68 @@ We're going to play, break things and put them back together. We'll make lots of
 
 ## History
 
+30 minutes
 
+Jacquard Loom 1800 ish
+
+Charles Babbage 1830s
+
+Ada Lovelace 1840s
+
+WW II
+
+To the Moon and back
+
+Mars
 
 
 
 ## Unplugged
 
+1 hour
+
 We don't need a computer or any electronics
+
+
+
+
+Boolean logic
+
 
 ## Scratch
 
+1 hour
+
+Make the cat walk
+
+What happens when the cat goes off the page
+
+make him
 
 ## Kodu
 
-
+10 minutes
 
 ## Micro:bit
 
+1 hour
 
 
 ## Sonic Pi
 
+1 hour
 Only if we have enough time.
 
 
 
 ## Review
 
+10 minutes
 
 
 ## Outro
+
+10 minutes
 
 
 ## Resources
@@ -59,4 +91,50 @@ The Pattern on the Stone, W. Daniel Hillis
 
 Agile thinking and learning, Andy Hunt, Pragmatic programmers
 
+### Videos
+
+Background
+
+Jean Bartik and the ENIAC women
+https://www.youtube.com/watch?v=aPweFhhXFvY
+
+Longer interview with Jean Bartik
+https://www.youtube.com/watch?v=buAYHonF968
+
+
 ### Websites
+
+Scratch
+http://scratch.mit.edu
+
+Kodu
+http://www.kodugamelab.com/
+
+Micro:bit and MicroPython Help
+http://microbit-micropython.readthedocs.io/en/latest/index.html
+
+Microbit for Primary Schools:
+http://mb4ps.co.uk/
+
+Multi Wing Span - Microbit examples, games
+http://www.multiwingspan.co.uk/micro.php
+
+
+Sonic Pi
+http://sonic-pi.net/
+
+HTML
+Sarah Frisk comic about coding web pages:
+http://monstermarkupmanual.com/
+
+Hour of Code
+Lesson plans, advice on organizing one-off events
+https://code.org/
+
+Code Club
+https://www.codeclub.org.uk/
+
+## Resources
+
+Notes on "How to Train your Robot"
+http://drtechniko.com/2012/04/09/how-to-train-your-robot/
