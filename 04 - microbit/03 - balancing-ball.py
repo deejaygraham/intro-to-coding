@@ -60,7 +60,7 @@ while True:
     if tilt_is_slight(x_tilt):
         ball[0] = ball[0] # nothing
     elif tilt_is_left(x_tilt):
-        ball[0] -=
+        ball[0] -= 1
     elif tilt_is_right(x_tilt):
         ball[0] += 1
 
