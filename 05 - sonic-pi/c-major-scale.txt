@@ -1,0 +1,20 @@
+# C Major scale
+
+play 36 # C3
+sleep 0.5
+play 38 # D3
+sleep 0.5
+play 40 # E3
+sleep 0.5
+play 41 # F3
+sleep 0.5
+play 43 # G3
+sleep 0.5
+play 45 # A3
+sleep 0.5
+play 47 # B3
+sleep 0.5
+
+# replace the sleep with a variable
+# or play_pattern [36, 38, 40, 41, 43, 45, 47]
+# or play_pattern_timed [..], [0.5]

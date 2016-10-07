@@ -1,0 +1,207 @@
+# Flight of the Bumblebee
+# http://raspi.tv/2013/sonic-pi-flight-of-the-bumblebee
+ 
+# Set BPM
+use_bpm 140
+ 
+# Define note lengths
+breve = 8
+semibreve = 4
+minim = 2
+crotchet = 1
+quaver = 0.5
+semi = 0.25
+demi = 0.125
+hemi = 0.0625
+ 
+# Set Synthesizer
+use_synth :pretty_bell
+ 
+play_pattern_timed [93, 92, 91, 90, 91, 90, 89, 88], semi
+play_pattern_timed [89, 88, 87, 86, 85, 84, 83, 82], semi
+play_pattern_timed [81, 80, 79, 78, 79, 78, 77, 76], semi
+play_pattern_timed [77, 76, 75, 74, 73, 72, 71, 70], semi
+ 
+2.times do
+  play_pattern_timed [69, 68, 67, 66, 67, 66, 65, 64], semi
+end
+ 
+# bar 7
+ 
+2.times do
+  2.times do
+    play_pattern_timed [69, 68, 67, 66, 65, 70, 69, 68], semi
+    play_pattern_timed [69, 68, 67, 66, 65, 66, 67, 68], semi
+  end
+ 
+  play_pattern_timed [69, 68, 67, 66, 67, 66, 65, 64], semi
+  play_pattern_timed [65, 66, 67, 68, 69, 70, 69, 68], semi
+  play_pattern_timed [69, 68, 67, 66, 67, 66, 65, 64], semi
+  play_pattern_timed [65, 66, 67, 68, 69, 71, 72, 73], semi
+ 
+  2.times do
+    play_pattern_timed [74, 73, 72, 71, 70, 75, 74, 73], semi
+    play_pattern_timed [74, 73, 72, 71, 70, 71, 72, 73], semi
+  end
+ 
+  2.times do
+    play_pattern_timed [74, 73, 72, 71, 72, 71, 70, 69], semi
+    play_pattern_timed [70, 71, 72, 73, 74, 75, 74, 73], semi
+  end
+ 
+  play_pattern_timed [74, 62, 62, 62, 62, 62, 62, 62], semi
+  play_pattern_timed [63, 62, 63, 75, 63, 62, 63, 75], semi
+ 
+  8.times do
+    play 74
+    sleep semi
+  end
+ 
+  play_pattern_timed [75, 74, 75, 87, 75, 74, 75, 87], semi
+  play_pattern_timed [86, 75, 74, 73, 74, 75, 74, 73], semi
+  play_pattern_timed [74, 75, 74, 73, 74, 75, 74, 73], semi
+ 
+  2.times do
+    play_pattern_timed [74, 75, 76, 77, 78, 77, 76, 75], semi
+  end
+ 
+  # bar 31
+  play_pattern_timed [74, 67, 67, 67, 67, 67, 67, 67], semi
+  play_pattern_timed [68, 67, 68, 80, 68, 67, 68, 80], semi
+ 
+  play_pattern_timed [67, 79, 79, 79, 79, 79, 79, 79], semi
+  play_pattern_timed [80, 79, 80, 92, 80, 79, 80, 92], semi
+ 
+  play_pattern_timed [91, 80, 79, 78, 79, 80, 79, 78], semi
+ 
+  # bar 36
+  play_pattern_timed [79, 80, 79, 78, 79, 80, 79, 78], semi
+ 
+  2.times do
+    play_pattern_timed [79, 80, 81, 82, 83, 82, 81, 80], semi
+  end
+ 
+  play_pattern_timed [79, 78, 77, 76, 75, 80, 79, 78], semi
+ 
+  # bar 40
+  play_pattern_timed [79, 78, 77, 76, 75, 76, 77, 78], semi
+  play_pattern_timed [79, 78, 77, 76, 77, 76, 75, 74], semi
+ 
+  # bar 42
+  play_pattern_timed [75, 76, 77, 78, 77, 78, 79, 80], semi
+  play_pattern_timed [81, 80, 79, 78, 79, 78, 77, 76], semi
+ 
+  # bar 44
+  play_pattern_timed [77, 76, 75, 74, 73, 72, 71, 70], semi
+ 
+  8.times do
+    play_pattern_timed [69, 70, 69, 68], semi
+  end
+ 
+  #bar 49
+  play_pattern_timed [69, 68, 67, 66, 67, 66, 65, 64], semi
+ 
+  # bar 50
+  play_pattern_timed [65, 64, 63, 62, 61, 60, 59, 58], semi
+ 
+  8.times do
+    play_pattern_timed [57, 58, 57, 56], semi
+  end
+ 
+  play_pattern_timed [57, 58, 59, 60, 61, 62, 63, 64], semi
+  play_pattern_timed [65, 66, 67, 68, 69, 70, 71, 72], semi
+  play_pattern_timed [73, 74, 75, 76, 77, 78, 79, 80], semi
+ 
+  2.times do
+    play_pattern_timed [81, 82, 81, 80], semi
+  end
+end # main repeat loop
+ 
+# bar 63
+2.times do
+  play_pattern_timed [81, 80, 79, 78, 77, 82, 81, 80], semi
+  play_pattern_timed [81, 80, 79, 78, 77, 78, 79, 80], semi
+end
+ 
+# bar 65, page 4
+play_pattern_timed [81, 80, 79, 78, 79, 78, 77, 76], semi
+play_pattern_timed [77, 78, 79, 80, 81, 83, 84, 85], semi
+ 
+#bar 67
+2.times do
+  play_pattern_timed [86, 85, 84, 83, 82, 87, 86, 85], semi
+  play_pattern_timed [86, 85, 84, 83, 82, 83, 84, 85], semi
+end
+ 
+# bar 71
+play_pattern_timed [86, 85, 84, 83, 84, 83, 82, 81], semi
+play_pattern_timed [82, 83, 84, 85, 86, 87, 86, 85], semi
+play_pattern_timed [86, 85, 84, 83, 82, 83, 84, 85], semi
+ 
+# bar 74
+play_pattern_timed [74, 76, 77, 79, 81, 83, 81, 80], semi
+ 
+# bar 75
+2.times do
+  play_pattern_timed [81, 80, 79, 78, 77, 82, 81, 80], semi
+  play_pattern_timed [81, 80, 79, 78, 77, 78, 79, 80], semi
+end
+ 
+#bar 79
+play 81
+sleep quaver
+play_pattern_timed [73, 74, 75, 76, 77, 78], semi
+play_pattern_timed [79, 78, 77, 76, 77, 76, 75, 74], semi
+ 
+# bar 81
+play_pattern_timed [73, 74, 75, 76, 77, 78, 79, 80], semi
+play_pattern_timed [81, 82, 81, 80, 81, 82, 81, 80], semi
+ 
+# bar 83
+play 93
+sleep quaver
+play_pattern_timed [73, 74, 75, 76, 77, 78], semi
+play_pattern_timed [79, 78, 77, 76, 77, 76, 75, 74], semi
+ 
+# bar 85
+play_pattern_timed [73, 74, 75, 76, 77, 78, 79, 80], semi
+play_pattern_timed [81, 82, 81, 80, 81, 83, 84, 85], semi
+play_pattern_timed [86, 85, 84, 83, 84, 83, 82, 81], semi
+play_pattern_timed [82, 81, 80, 79, 78, 77, 76, 75], semi
+ 
+#bar 89
+play_pattern_timed [74, 73, 72, 71, 72, 71, 70, 69], semi
+play_pattern_timed [70, 69, 68, 67, 66, 65, 64, 63], semi
+ 
+#bar 91
+play_pattern_timed [62, 63, 62, 61, 63, 62, 63, 75], semi
+play_pattern_timed [62, 63, 62, 64, 62, 65, 62, 67], semi
+ 
+# 93
+play_pattern_timed [81, 82, 81, 80, 81, 93, 81, 95], semi
+play_pattern_timed [93, 83, 81, 95, 81, 96, 81, 97], semi
+ 
+# 95
+play 98
+sleep quaver
+ 
+# quaver rest
+sleep quaver
+ 
+play_pattern_timed [69, 70, 71, 72], semi
+play_pattern_timed [73, 74, 75, 76, 77, 78, 79, 80], semi
+ 
+#97
+play_pattern_timed [81, 82, 83, 84, 85, 86, 87, 88], semi
+play_pattern_timed [89, 90, 91, 92, 93, 95, 96, 97], semi
+ 
+#99
+play 98
+sleep minim
+ 
+#100
+play 110
+sleep minim
+ 
+play 86
+sleep crotchet

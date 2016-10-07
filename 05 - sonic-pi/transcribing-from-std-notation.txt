@@ -1,0 +1,30 @@
+
+
+
+# overall speed of the piece
+# everything else is defined in terms of this speed 
+# so relative speeds 
+speed = 0.45  
+
+# Note values from: https://en.wikipedia.org/wiki/Note_value
+
+# british names
+breve = 8 * speed  
+semi_breve = 4 * speed  
+minim = 2 * speed  
+crotchet = 1 * speed  
+quaver = 0.5 * speed  
+semi_quaver = 0.25 * speed  
+demi_semi_quaver = 0.125 * speed  
+hemi_demi_semi_quaver = 0.0625 * speed
+
+# u.s. names
+double_whole_note = breve
+whole_note = semi_breve
+half_note = minim
+quarter_note = crotchet
+eighth_note = quaver
+sixteenth_note = semi_quaver
+thirty_second_note = demi_semi_quaver
+sixty_fourth_note = hemi_demi_semi_quaver
+
