@@ -29,9 +29,16 @@ Ada Lovelace 1840s
 
 WW II
 
+Turing's Universal Machine
+
 To the Moon and back
 
+Margaret Hamilton
+
 Mars
+
+Robots are all software controlled. Calculations of trajectories earth -> mars
+are all software (very complicated maths).
 
 
 
@@ -41,10 +48,9 @@ Mars
 
 We don't need a computer or any electronics
 
-
-
-
+Role play 
 Boolean logic
+
 
 
 ## Scratch
