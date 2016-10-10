@@ -1,28 +1,40 @@
 # C Chromatic scale
 
-play 36 # C3 
+play 36 # C3
 sleep 0.5
 play 37
 sleep 0.5
-play 38 
+play 38
 sleep 0.5
-play 39 
+play 39
 sleep 0.5
-play 40 
+play 40
 sleep 120
-play 41 
+play 41
 sleep 0.5
-play 42 
+play 42
 sleep 0.5
-play 43 
+play 43
 sleep 0.5
-play 44 
+play 44
 sleep 0.5
-play 45 
+play 45
 sleep 0.5
-play 46 
+play 46
 sleep 0.5
-play 47 
+play 47
 sleep 0.5
-play 48 # C4 
+play 48 # C4
 sleep 0.5
+
+
+# Collapse into...
+
+root = 36
+note = root
+
+12.times do
+  play note
+  sleep 0.5
+  note += 1
+end
