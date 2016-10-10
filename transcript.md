@@ -13,32 +13,76 @@ My vision for this afternoon is to bring you up to date on the last 200 years of
 
 I don't want to spend any longer than necessary talking today, what I would like is to explain some things, have you tinker and explore and feel comfortable enough that you aren't just following a list of instructions but will begin to understand what it's all about.
 
-Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?
+We're going to play with some code, make some things, break some things and put them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some stuff. I want you to be fiddling with code to see how it works, you can't break anything and the worst thing that can happen is that we have to scrap your program and type it in again. Sometimes that's not even a bad thing because doing the same thing in different ways is a good way to understand how something works.
 
-We're going to play, break things and put them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some things. We'll understand what we are doing and figure together how to fix them. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time to get used to and  
+We'll understand what we are doing and figure together how to fix them. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time to get used to.
+
+The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
+
+Technology affects everything, AI in amazon recommendations, credit card fraud, making movies, medical research (data collection, analysis), medical devices (hearing aids), space exploration, home (Nest, Wifi, DVR), Cars (brakes, steering, engine control), iPods and mobiles
+
+Social skills, like making a movie - lots of specialised skills coming together with a common objective and working together and communicating. Not about working in your bedroom any more (if it ever was).
+
+Debugging good to confirm you version of reality. Often we think we have said one thing, the other person has understood something totally different
 
 ## History
 
 30 minutes
 
-Jacquard Loom 1800 ish
+The history of computers has been the history of humans telling machines what to do. Like to call out the contribution of women in this field because it isn't as well represented or understood as it should be.
 
-Charles Babbage 1830s
+Computer inventor Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?  
 
-Ada Lovelace 1840s
+Jacquard Loom 1800 ish didn't need a human operator, the pattern on the carpet or rug was defined, line by line by a series of cards with holds punched in them to indicate what the design should be. The machine started at the beginning of the stack and worked it's way through each one, line by line until it reached the end and the carpet was complete.
 
-WW II
+Before this time, machines were really meant as extensions of a person's capability and required their skill to use them.
+
+Lots of machines were made after the jacquard loom , still as single purpose devices but with some kind of configuration built into them. But you could not take a windmill and make it into a bakery.
+
+Charles Babbage 1830s had an idea for a more general purpose maths calculation machine. He got cash from parliament to build the machine (millions) but got bored with it half way through and started another project. It was never fully built and tested until fairly recently.
+
+Despite not having a working machine, Ada Lovelace became the first programmer to write code for a "computer" in the 1840s and the machine didn't even exist!
+
+Lots of history goes by with machines becoming more complex and having more variability and control but they tended to stay in their little silos until WWII
+
+WW II - As the Nazi's had come up with a fiendish plot to encrypt all their data, the good folk of Bletchley Park came together to try and solve the problem using Maths. Very interesting history and not revealed until the 1980s when it came into the daylight from the cover of the official secrets act.
 
 Turing's Universal Machine
+Alan Turing had some thoughts about general purpose computing and posed the idea that you could build a machine that would know how to carry out a very small set of instructions but that the instructions would be structured in a way that they could be combined in lots of ways so that *any* problem could be solved by it if you could work out what the list of instructions should be. Like Babbage, Turing didn't build the computer, that was a team from the Post Office headed by an electrical engineer named Tommy Flowers. They built "Collosus" which was the first proper digital computer and helped with the war.
+
+Lots of other efforts were going on in the US and around the world to solve the same problem so history can be quite hard fought for who has the honour of first "what".
+
+Notable in these is Jean Bartik and the (all female) crew of the ENIAC which was a digital computer used to simulate bullet trajectories for wartime. Prior to this a computer was a person with a calculator using log table to work out trajectories in about a week. The ENIAC could do it before the shell landed.
+
+
+First Bug
+
 
 To the Moon and back
 
-Margaret Hamilton
+Margaret Hamilton lead the team to develop the guidance systems for the Appollo 11 man on the moon project. Show stack of papers. This was with knitted memory and less programming power than is available in your mobile phone today. It was about 1/millionth.
 
 Mars
 
 Robots are all software controlled. Calculations of trajectories earth -> mars
 are all software (very complicated maths).
+
+and another woman is notable for writing the parachute guidance systems in the recent mars mission where rovers were dropped from parachutes onto surface.
+
+All this time, the processing of machines has got faster and faster as electronics have improved, got smaller, lighter, more reliable. We've gone from hard wired - physical wiring to switches, punched cards, paper tapes etc. so getting information into the machine and getting results back out has always been a challenge. Graphs drawn, lights, beeps and boops.
+
+Often now the same computer in your DVR or x-box is the same as in your laptop but with different input controls and outputs and different software.
+
+Errors
+
+Also because of turings idea of the general purpose computer being able to work on any problem, there are usually many more ways to write a program. Some will run faster than others, some will use more resources and some bad ones will do both.
+
+Programming languages are the struggle we humans have to tell computers how to work and still be able to reason about what we have written and allow others to understand what we have done and build upon it. Communication with other humans is at least as important.
+
+Time Flies like an arrow
+Fruit Flies like a banana
+
+How do we interpret that?
 
 
 
@@ -47,6 +91,46 @@ are all software (very complicated maths).
 1 hour
 
 We don't need a computer or any electronics
+
+Important skills for critical thinking, logic and visualization and imagination
+
+Pencil and paper debugging
+Rubber Ducking - explaining the problem and what might be the cause of it.
+
+Using the scientific method
+Hypothesis.If that'strue what would we expect - look for ways your theory confirms what you see. Look for ways it contradicts what you see.
+
+
+Algoritjms
+
+Put things in the gith ordder
+
+
+Have a bath
+Bathing
+Turn bath water on
+Get into Bath
+Wash
+Get out of the Bath
+
+Have a birthday party
+Set plates
+Set knives and forks
+bring out the food
+spread the table cloth
+
+Eat at restaurant
+
+Eat food
+Full?
+No
+Yes
+Pay bill
+Leave
+
+Make a sandwich
+
+
 
 Role play
 Boolean logic
