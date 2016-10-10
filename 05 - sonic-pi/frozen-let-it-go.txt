@@ -1,0 +1,171 @@
+
+# Let it Go - Pi Version
+# from https://gist.github.com/danreedy/a0f0aa1ec2eb275c55a2
+
+  use_bpm 34
+  use_synth :pretty_bell
+
+  quaver = 0.125 #Eight note
+  crotchet = 0.25 #Quarter note
+  minim = 0.5 #Half note
+  semibreve = 1 #Whole note
+
+  in_thread(name: :rh) {rightHand}
+  in_thread(name: :lh) {leftHand}
+
+  define :introRH do
+
+    play_pattern_timed [78, 79, 71, 78, 79],[quaver, quaver, quaver, crotchet, crotchet+quaver]
+    play_pattern_timed [78, 79, 71, 79, 78, 69],[quaver, quaver, quaver, crotchet, crotchet, quaver]
+    play_pattern_timed [76, 78, 69, 76, 78, 69],[quaver, quaver, quaver, crotchet, crotchet, quaver]
+
+  end
+
+  #Bars 1 to 16
+  define :rightHand do
+    introRH
+    play_pattern_timed [74, 72], [minim]
+    introRH
+    play_pattern_timed [74, 73, 64], [minim, crotchet+quaver, quaver]
+    play_pattern_timed [71, 71, 71, 71, 71], [crotchet, crotchet, crotchet, quaver, quaver]
+    play_pattern_timed [71, 69, 67, 67, 67, 67], [quaver, quaver, quaver, crotchet+quaver, quaver, quaver]
+    play_pattern_timed [69, 69, 69, 67, 64], [quaver, minim, quaver, quaver, quaver]
+    play_pattern_timed [62, 60, 64], [minim, crotchet+quaver, quaver]
+    play_pattern_timed [71, 71, 71, 71, 74, 74], [quaver, quaver, quaver, crotchet+quaver, quaver, crotchet]
+    play_pattern_timed [71, 67, 67], [0.625, quaver, quaver]
+    play_pattern_timed [69, 71, 69, 67, 69], [quaver, minim, quaver, quaver, quaver]
+    play_pattern_timed [62, 61], [minim]
+    #Bars 17 - 34
+    sleep crotchet
+    play_pattern_timed [71, 71, 74, 76], [quaver, crotchet, crotchet, crotchet]
+    play_pattern_timed [74, 71, 74, 74], [crotchet]
+    play_pattern_timed [74, 72, 71, 72], [crotchet, crotchet, crotchet, quaver]
+    play_pattern_timed [71, 62, 64, 66, 67, 69, 71, 72], [quaver]
+    play_pattern_timed [67, 71, 69, 71, 69, 67, 66, 69], [0, crotchet, quaver, quaver, quaver, crotchet, 0, crotchet+quaver]
+    play_pattern_timed [69, 71, 69, 67], [quaver, quaver, crotchet, crotchet+quaver]
+    play_pattern_timed [61, 64], [0, minim+crotchet+quaver]
+    sleep crotchet
+    play_pattern_timed [76, 81], [crotchet, minim]
+    play_pattern_timed [76, 78, 69, 69, 74, 74], [0, crotchet, quaver, crotchet, crotchet, crotchet+quaver]
+    play_pattern_timed [69, 69, 76, 76], [quaver, crotchet, crotchet, quaver+crotchet]
+    play_pattern_timed [76, 74, 76, 76, 74], [quaver, quaver, quaver, crotchet, quaver]
+    play_pattern_timed [72, 74, 78, 79, 78, 74, 78], [0, quaver, crotchet, crotchet, crotchet, 0, quaver+crotchet]
+    play_pattern_timed [69, 69, 74, 69, 74], [quaver, crotchet, crotchet, 0, crotchet+quaver]
+    play_pattern_timed [69, 69, 76, 72, 76], [quaver, crotchet, crotchet, 0, quaver+semibreve+minim+crotchet]
+    play_pattern_timed [74, 72, 76], [quaver, 0, crotchet]
+    play_pattern_timed [74, 78, 76, 79], [0, crotchet, 0, quaver+semibreve]
+    sleep quaver
+    play_pattern_timed [76, 78, 79], [quaver, quaver, minim+quaver]
+    sleep quaver
+    play_pattern_timed [74, 74, 81, 79], [quaver, quaver, quaver+minim+crotchet, crotchet]
+    play_pattern_timed [76, 76, 76, 76, 78, 79], [quaver, quaver, crotchet, quaver, crotchet, quaver+minim]
+    sleep quaver
+    play_pattern_timed [76, 78, 79], [quaver, quaver, crotchet+minim]
+    play_pattern_timed [74, 83, 78, 81], [quaver, quaver, 0, quaver+minim]
+    sleep quaver
+    play_pattern_timed [79, 81, 79, 83], [quaver, quaver, 0, crotchet]
+    play_pattern_timed [83, 84, 83, 81, 79], [crotchet, quaver, crotchet, quaver, quaver]
+    play_pattern_timed [76, 81, 79, 76, 84, 76, 84], [0, quaver, crotchet+quaver, 0, crotchet, 0, crotchet]
+    play_pattern_timed [79, 83, 86, 83, 78, 81], [0, 0, quaver+crotchet, quaver+crotchet, 0, crotchet+minim]
+    play_pattern_timed [79, 79], [crotchet]
+    play_pattern_timed [79, 83, 86, 83, 76, 79], [0, 0, quaver+crotchet, quaver+crotchet, 0, semibreve]
+    play_pattern_timed [79, 79], [quaver]
+    play_pattern_timed [71, 74, 78, 74, 74], [0, 0, crotchet+quaver, crotchet+quaver, crotchet]
+    play_pattern_timed [70, 67, 64, 72], [quaver*7, quaver, 0, crotchet]
+    play_pattern_timed [72, 71, 72, 71, 72, 72, 71, 67], [quaver]
+  end
+
+  define :leftHand do
+    2.times do
+      play_chord [52, 59]
+      sleep semibreve
+      play_chord [48, 55]
+      sleep semibreve
+      play_chord [50, 57]
+      sleep semibreve
+      play_chord [45, 52]
+      sleep semibreve
+    end
+    play_pattern_timed [40, 47, 52], [crotchet, crotchet, minim]
+    play_pattern_timed [36, 43, 48, 43], [crotchet]
+    play_pattern_timed [38, 45, 50], [crotchet, crotchet, minim]
+    play_pattern_timed [45, 52, 57], [0, 0, semibreve]
+    play_pattern_timed [52, 59, 64], [crotchet, crotchet, minim]
+    play_pattern_timed [48, 55, 59, 64], [crotchet]
+    play_pattern_timed [50, 57, 62], [crotchet, crotchet, minim]
+    #bars 16 onwards
+    play_pattern_timed [45, 52, 57], [crotchet, crotchet, minim]
+    play_pattern_timed [52, 59, 64, 59], [crotchet]
+    play_pattern_timed [48, 55, 60, 55], [crotchet]
+    play_pattern_timed [50, 57, 62, 57], [crotchet]
+    play_pattern_timed [45, 52, 57, 60], [crotchet, crotchet, 0, minim]
+    play_pattern_timed [40, 52, 38, 50], [0, quaver*7,0, quaver+semibreve]
+    play_pattern_timed [45, 52, 57, 59], [crotchet]
+    play_chord [57, 61]
+    sleep semibreve
+
+    2.times do
+      play_chord [50, 57, 62]
+      sleep semibreve
+    end
+    2.times do
+      play_chord [48, 55, 60]
+      sleep semibreve
+    end
+    2.times do
+      play_chord [50, 57, 62]
+      sleep semibreve
+    end
+    2.times do
+      7.times do
+        play_chord [48, 55, 60]
+        sleep crotchet
+      end
+      sleep crotchet
+    end
+    4.times do
+      play_pattern_timed [67, 71, 62], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [66, 69, 62], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [67, 71, 64], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [67, 72, 64], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [67, 71, 62], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [66, 69, 62], [0, quaver, quaver]
+    end
+    4.times do
+      play_pattern_timed [64, 67, 59], [0, quaver, quaver]
+    end
+    2.times do
+      play_pattern_timed [64, 67, 60], [0, quaver, quaver]
+    end
+    play_pattern_timed [64, 67, 60], [0, crotchet, crotchet]
+    play_pattern_timed [55, 62], [quaver]
+    3.times do
+      play_pattern_timed [67, 62],[quaver]
+    end
+    play_pattern_timed [50, 57], [quaver]
+    3.times do
+      play_pattern_timed [62, 57],[quaver]
+    end
+    play_pattern_timed [52, 59], [quaver]
+    3.times do
+      play_pattern_timed [64, 59],[quaver]
+    end
+    play_pattern_timed [48, 55], [quaver]
+    3.times do
+      play_pattern_timed [60, 55],[quaver]
+    end
+    play_pattern_timed [47, 54, 59, 61, 62, 59], [quaver, quaver, quaver, quaver, crotchet, crotchet]
+    play_pattern_timed [46, 53, 58, 60, 58], [quaver, quaver, quaver, quaver, crotchet, crotchet]
+    play_chord [48, 55, 60]
+    sleep semibreve+minim
+  end
