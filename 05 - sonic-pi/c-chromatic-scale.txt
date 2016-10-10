@@ -9,7 +9,7 @@ sleep 0.5
 play 39
 sleep 0.5
 play 40
-sleep 120
+sleep 0.5
 play 41
 sleep 0.5
 play 42
