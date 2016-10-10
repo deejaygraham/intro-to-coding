@@ -1,5 +1,7 @@
 use_synth :piano
-speed = 0.45  #set overall speed
+
+speed = 0.65  #set overall speed
+
 breve = 8 * speed
 semibreve = 4 * speed
 minim = 2 * speed

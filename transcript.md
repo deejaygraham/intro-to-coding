@@ -48,7 +48,7 @@ are all software (very complicated maths).
 
 We don't need a computer or any electronics
 
-Role play 
+Role play
 Boolean logic
 
 
@@ -63,17 +63,37 @@ What happens when the cat goes off the page
 
 make him
 
+While Loop
+
+Touching edges
+
+
+Shark game
+
+Robot makes tea
+
+Bounce around screen until found object
+
+Move on to next thing.
+
+
+
 ## Kodu
 
 10 minutes
 
 MS advanced game platform. Targeted at older children but still drag, drop visual
-coding. Only seems to be windows specific. Not website version app.
+coding. Only seems to be windows specific and x-box in the US only. No website version available. Similar to
+Scratch is approach - blocks drag and drop and connected together but can be used with 3-d graphics for games.
+
+Suited to older children but not that impressive.
 
 
 ## Micro:bit
 
 1 hour
+
+PJ?
 
 New hardware platform - tiny board (a bit like the raspberry pi) but with bluetooth,
  compass, tiny display, accelerometer. Runs a number of different programming languages
@@ -86,10 +106,60 @@ New hardware platform - tiny board (a bit like the raspberry pi) but with blueto
 
  Type code into window and press flash to download.
 
+ Errors are shown scrolling across the screen on the device.
+
+Download simple game
+
+Show a picture
+
+Show a picture
+delay
+Show a different picture
+
+Run forever with while true
+
+Run until button pushed
+
+Play with it
+
+Change the picture on an event
+accelerometer
+
+Can we clean it up.
+
+Example games:
+
+Magic 8 ball
+
+balancing ball - play and adapt it. Make it more responsive, less responsive.
+
+
 ## Sonic Pi
 
 1 hour
+
 Only if we have enough time.
+
+Simple programming language for music. Play note
+
+Play notes in sequence
+
+Sleep for a delay time.
+
+Changing length of delay with a variable.
+
+
+Transposing music using variables - root note and intervals
+
+Scales
+
+Major scale definition
+Same form of code but with different starting note. same code, different variable.
+
+
+Repeating patterns
+
+how many times to repeat something
 
 
 
