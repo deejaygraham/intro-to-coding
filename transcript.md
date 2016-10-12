@@ -2,20 +2,30 @@
 
 ## Welcome
 
-15 minutes
+Hi, welcome to this introductory session on coding.
 
-Hi, welcome to this introductory session on coding. My name is Derek Graham and I am a principal developer at Sage. I've spent the last 25 years developing software for lots of different industries, products and worked in lots of different areas - consulting, managing teams and software departments, and sometimes writing code.
+### Me
 
-I know for this session you all know each other, but to
-get a sense of everyone else's current experience and expectations, can we go around the room and just say who you are, what your experience is (if any) and what you hope to get out of this afternoon.
+My name is Derek Graham and I am a principal developer at Sage. I've spent the last 25 years developing software for lots of different industries, products and worked in lots of different areas - consulting, managing teams and software departments, and sometimes writing code. I have a BSc in Electronics and Physics and an MSc in Computer Science.
 
-My vision for this afternoon is to bring you up to date on the last 200 years of computing history and why we are where we are today, talk about making first steps into learning about computer science, we'll take a look at some of the best languages for learners available at the moment and I hope to give you lots of ideas for how to teach this subject when you get back to school.
+### Introductions
 
-I don't want to spend any longer than necessary talking today, what I would like is to explain some things, have you tinker and explore and feel comfortable enough that you aren't just following a list of instructions but will begin to understand what it's all about.
+I know for this session you all know each other, but to get a sense of everyone else's current experience and expectations, can we go around the room and just say who you are, what your experience is (if any) and what you hope to get out of this afternoon?
 
-We're going to play with some code, make some things, break some things and put them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some stuff. I want you to be fiddling with code to see how it works, you can't break anything and the worst thing that can happen is that we have to scrap your program and type it in again. Sometimes that's not even a bad thing because doing the same thing in different ways is a good way to understand how something works.
+### My Vision
 
-We'll understand what we are doing and figure together how to fix them. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time to get used to.
+My vision for this afternoon is to bring you up to date on the last 200 years of computing history and why we are where we are today. To talk about making first steps into learning about computer science, we'll take a look at some of the best languages for new learners available at the moment and I hope to give you lots of ideas for how to teach this subject when you get back to school.
+
+I don't want to spend any longer than necessary talking today, what I would like is to explain some things, then have you tinker and explore enough to feel comfortable that you aren't just following a list of instructions but beginning to understand what it's all about.
+
+We're going to play with some code, make some things, break some things (maybe on purpose and definitely by accident) and put then them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some stuff. I want you to be fiddling with code, taking it apart to see how it works. You can't break anything and the worst thing that can happen is that we have to scrap your program and type it in again. No one will shout at you for getting something wrong. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time and effort to get used to applying that skill. Most of the work is going to be inside your head, not typing keys on the keyboard.
+
+### Computers in Society
+
+Computers are usually portrayed
+
+
+
 
 The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
 
@@ -141,25 +151,125 @@ Boolean logic
 
 1 hour
 
-Make the cat walk
+Scratch is a visual programming language that you can use to make simple programs and games. It is
+aimed primarily at children but anyone is able to participate and use it.
 
-What happens when the cat goes off the page
+There are versions you can download to your machine or you can get started really quickly using the website.
 
-make him
+Go to:
 
-While Loop
+http://scratch.mit.edu
 
-Touching edges
+and click on the *Create* button
+
+Left hand side is where your program will run. Middle is set of building blocks you can use to
+build the program (Scripts). Right hand side is where you drag the blocks and wire them up.
+
+Start and Stop buttons at the top.
+
+### Make the cat walk
+
+Drag move step across to right hand side and click on it with mouse. You should see the cat move a little bit.
+Play with changing the value in the box. What happens? What about a negative value?
+
+What do you think will happen?
+
+*Variable*
+
+### Really make it walk
+
+Switch to the control section and drag a repeat block. Slide move into repeat block.
+Click on assembled blocks. What happens? Change the repeat value.
+
+Let's make it walk all the way across the screen. Change repeat to a forever loop.
+Pull movement block out and drag repeat block out. Drag on the forever loop.
+
+Click on block - will go off screen and you can drag it back on but it will keep trying
+to escape!!!
+
+Lets try to correct that. Go to motion blocks and use if on edge, bounce.
+Now it's upside down!
+
+Go to info on sprite and change rotation symbol to left right.
 
 
-Shark game
+*Repetition*
+*Predicting Behaviour*
 
-Robot makes tea
+### Bit Rubbish
 
-Bounce around screen until found object
+Now that it's behaving like we want let's try and make it more realistic. For a
+cartoon cat.
 
-Move on to next thing.
+Costume 1
+move 10
+Wait 0.25
+switch costume 2
+move 10
+wait 0.25
 
+*Repetition*
+
+Is there a better way - algorithm works but is a better way?  Next Costume. and remove other blocks
+
+Notice when you have a block of blocks, you have to disassemble them from the bottom
+can't get rid of the top block on it's own!
+
+Looks better? What about the wait, we can make that zero?
+
+### Events
+
+Let's make it start when we start the game, rather than when we click on it.
+What about if we clicked on cat?
+
+### Game
+
+Let's try keeping the mouse moving and if the cat catches up with you, it scores a point!
+
+Add *point towards mouse pointer* at end of blocks.
+
+Follows you around the screen.
+
+How does it catch you?
+
+Test where mouse pointer and cat are.
+
+In sensing, there is a *touching* block. Add If block (from control) and slot in the
+touching. See that it will do something inside it when the touching is true?
+
+### Keeping Score
+
+Make Variable from data. Score for this sprite only. Initialise at beginning.
+If touching, change score by 1.
+
+### Boolean Logic ???
+
+
+### Let's end this:
+
+Bit too easy for cat, when score increases, move cat away again. Go to random position.
+
+Now, what about if we get to a big value?
+
+Let's put in a check to say we will end the game when we get to 50? If operators
+comparison. Add MaxScore variable. Set it to 50 at start. If Score > MaxScore then end.
+Stop this script.
+
+How could we make the game ending better? You win?
+
+
+### Turtles
+
+Use Pens to draw pretty pictures
+
+Draw a square. Draw a triangle, draw more shapes.
+
+
+### Resources
+
+Raspberry Pi website has lots of good scratch material that is not RP specific.
+
+https://www.raspberrypi.org/learning/getting-started-with-scratch/
 
 
 ## Kodu
@@ -272,12 +382,43 @@ appreciation for what it takes to understand what is going on inside the compute
 
 10 minutes
 
+### Things wot we have learned
+
+algorithms
+precise and unambiguous language
+logic
+
+decompose a problem into smaller steps
+
+create simple programs
+use logical reasoning to predict behaviour of a program
+
+sequence
+Selection
+repetition
+Variables
+
+using abstraction to model the world to solve a problem
+
+Different kinds of programming languages
+  Interpreted
+  Compiled
+
+Inputs
+outputs
+
+debug simple programs
+
 
 ## Resources
 
 ### Books
 
 The Pattern on the Stone, W. Daniel Hillis
+
+A Mind of It's Own - Cordelia Fine
+
+Brain Rules - John Medina
 
 Agile thinking and learning, Andy Hunt, Pragmatic programmers
 
