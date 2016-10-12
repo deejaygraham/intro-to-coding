@@ -22,14 +22,22 @@ We're going to play with some code, make some things, break some things (maybe o
 
 ### Computers in Society
 
-Computers are usually portrayed
+Most people's ideas about computers come either from the movies (hackers) or from being  are usually portrayed either as being super-high tech
 
 
+Otherwise it's about building mobile apps or websites. For me it's a hugely creative thing and mostly about self-expression.
+
+Sam Aaron invented sonic pi (later) writes code live in front of a dancing audience in nightclubs all over the world. Hugely technical but something that lots of people wouldn't be able to tell from
+a mix by another dj.
 
 
 The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
 
+### Code, Code Everywhere
+
 Technology affects everything, AI in amazon recommendations, credit card fraud, making movies, medical research (data collection, analysis), medical devices (hearing aids), space exploration, home (Nest, Wifi, DVR), Cars (brakes, steering, engine control), iPods and mobiles
+
+### Skills
 
 Social skills, like making a movie - lots of specialised skills coming together with a common objective and working together and communicating. Not about working in your bedroom any more (if it ever was).
 
@@ -38,6 +46,9 @@ Debugging good to confirm you version of reality. Often we think we have said on
 ## History
 
 30 minutes
+
+Mozart, standard music notation - someone wrote instructions for a human and a machine to carry out together. Human plays violin, piano etc. and even though Mozart is now dead, we can
+still enjoy his music provided the musicians are able to carry out his instructions to the letter (with some interpretation).
 
 The history of computers has been the history of humans telling machines what to do. Like to call out the contribution of women in this field because it isn't as well represented or understood as it should be.
 
@@ -71,6 +82,8 @@ First Bug
 To the Moon and back
 
 Margaret Hamilton lead the team to develop the guidance systems for the Appollo 11 man on the moon project. Show stack of papers. This was with knitted memory and less programming power than is available in your mobile phone today. It was about 1/millionth.
+
+### Space !
 
 Mars
 
@@ -260,9 +273,12 @@ How could we make the game ending better? You win?
 
 ### Turtles
 
-Use Pens to draw pretty pictures
+Use *Pens* to draw pretty pictures
 
 Draw a square. Draw a triangle, draw more shapes.
+
+Turn n degrees, move forward, turn n degrees
+
 
 
 ### Resources
@@ -466,6 +482,12 @@ https://code.org/
 
 Code Club
 https://www.codeclub.org.uk/
+
+Twinery - create interactive games or short stories using javascript and html.
+https://twinery.org/
+
+Project Spark
+http://welcome.projectspark.com/
 
 ## Resources
 
