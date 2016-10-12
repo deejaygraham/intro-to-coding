@@ -6,7 +6,7 @@ Hi, welcome to this introductory session on coding.
 
 ### Me
 
-My name is Derek Graham and I am a principal developer at Sage. I've spent the last 25 years developing software for lots of different industries, products and worked in lots of different areas - consulting, managing teams and software departments, and sometimes writing code. I have a BSc in Electronics and Physics and an MSc in Computer Science.
+My name is Derek Graham and I am a principal developer at Sage. I've spent the last 25 years developing software for lots of different industries, products and worked in lots of different areas - consulting, managing teams and software departments, and sometimes writing code. I have a BSc. in Electronics and Physics and an MSc. in Computer Science.
 
 ### Introductions
 
@@ -22,13 +22,14 @@ We're going to play with some code, make some things, break some things (maybe o
 
 ### Computers in Society
 
-Most people's ideas about computers come either from the movies (hackers) or from being  are usually portrayed either as being super-high tech
+Most people's ideas about computers come either from the movies (hackers) or from being made to use awful software in their own work, frequently badly designed software that makes them feel stupid for not knowing how to use it correctly.
+
+Otherwise in popular culture and in the news, it's about building mobile apps or websites or where the latest security leak has happened. For me it's a hugely social and creative outlet and very much about self-expression.
+
+One example of the extreme creative side of coding is Sam Aaron, inventor of sonic pi (later), who writes code in nightclubs all over the world. His code creates music which he performs live in front
+club goers who usually can't tell it from a conventional dj.
 
 
-Otherwise it's about building mobile apps or websites. For me it's a hugely creative thing and mostly about self-expression.
-
-Sam Aaron invented sonic pi (later) writes code live in front of a dancing audience in nightclubs all over the world. Hugely technical but something that lots of people wouldn't be able to tell from
-a mix by another dj.
 
 
 The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
@@ -47,50 +48,59 @@ Debugging good to confirm you version of reality. Often we think we have said on
 
 30 minutes
 
-Mozart, standard music notation - someone wrote instructions for a human and a machine to carry out together. Human plays violin, piano etc. and even though Mozart is now dead, we can
-still enjoy his music provided the musicians are able to carry out his instructions to the letter (with some interpretation).
+Mozart the dead composer wrote his programs in standard music notation. Thats really what music is,
+a written set of instructions for a human and a machine to carry out together. Human plays violin, piano etc. and even though Mozart is now dead, we can
+still enjoy his music provided the musicians are able to carry out his instructions to the letter (with some interpretation). No one needs the ghost of the composer to be present to make sure that the "code"
+runs.
 
-The history of computers has been the history of humans telling machines what to do. Like to call out the contribution of women in this field because it isn't as well represented or understood as it should be.
+The history of computers has been the history of humans telling machines what to do. In taking you through an extremely short history, I'd like to call out the contribution of women in this field because it isn't as well represented or understood as it should be.
 
-Computer inventor Danny Hillis described what computer programmers do as being akin to witchcraft. To be a computer programmer in the 16th century would have seen you burnt at the stake as a witch. We carve special markings onto rocks, speak a special arcane language them and they do what we tell them out in the world. If that's not witchcraft, what is?  
+### Witchcraft
 
-Jacquard Loom 1800 ish didn't need a human operator, the pattern on the carpet or rug was defined, line by line by a series of cards with holds punched in them to indicate what the design should be. The machine started at the beginning of the stack and worked it's way through each one, line by line until it reached the end and the carpet was complete.
+Super-Computer inventor Danny Hillis described what computer programmers do as being akin to witchcraft. We carve special markings onto rocks (silicon chips), speak a special arcane language them (code) and they do what we tell them out in the world (programs). If that's not witchcraft, what is? To be a computer programmer in the 16th century would have seen you burnt at the stake.
 
-Before this time, machines were really meant as extensions of a person's capability and required their skill to use them.
+### Looms
 
-Lots of machines were made after the jacquard loom , still as single purpose devices but with some kind of configuration built into them. But you could not take a windmill and make it into a bakery.
+In the 1800s the Jacquard Loom was one of the first machines that didn't need a human operator, the pattern on the carpet or rug was defined, line by line by a series of cards with holds punched in them to indicate what the design should be. The machine started at the beginning of the stack and worked it's way through each one, line by line until it reached the end and the carpet was complete.
 
-Charles Babbage 1830s had an idea for a more general purpose maths calculation machine. He got cash from parliament to build the machine (millions) but got bored with it half way through and started another project. It was never fully built and tested until fairly recently.
+Before this time, machines were really meant as extensions of a person's capability and required their skill to use them. Lots of machines were made after the jacquard loom, still as single purpose devices but with some kind of configuration built into them. But you could not take a windmill and make it into a bakery.
+
+### Babbage
+
+In the 1830s, Charles Babbage had an idea for a more general purpose maths calculation machine. He got cash from parliament to build the machine (millions of pounds) but got bored with it half way through and started another project. It was never fully built and tested until fairly recently.
 
 Despite not having a working machine, Ada Lovelace became the first programmer to write code for a "computer" in the 1840s and the machine didn't even exist!
+
+### War
 
 Lots of history goes by with machines becoming more complex and having more variability and control but they tended to stay in their little silos until WWII
 
 WW II - As the Nazi's had come up with a fiendish plot to encrypt all their data, the good folk of Bletchley Park came together to try and solve the problem using Maths. Very interesting history and not revealed until the 1980s when it came into the daylight from the cover of the official secrets act.
 
-Turing's Universal Machine
+### Turing's Universal Machine
 Alan Turing had some thoughts about general purpose computing and posed the idea that you could build a machine that would know how to carry out a very small set of instructions but that the instructions would be structured in a way that they could be combined in lots of ways so that *any* problem could be solved by it if you could work out what the list of instructions should be. Like Babbage, Turing didn't build the computer, that was a team from the Post Office headed by an electrical engineer named Tommy Flowers. They built "Collosus" which was the first proper digital computer and helped with the war.
 
 Lots of other efforts were going on in the US and around the world to solve the same problem so history can be quite hard fought for who has the honour of first "what".
 
 Notable in these is Jean Bartik and the (all female) crew of the ENIAC which was a digital computer used to simulate bullet trajectories for wartime. Prior to this a computer was a person with a calculator using log table to work out trajectories in about a week. The ENIAC could do it before the shell landed.
 
+### Bugs
 
-First Bug
+Things that go wrong with code where we there is an outcome that we don't intend are called bugs. This comes from a time when computers were mostly electrical and electronics writ large, lots of wires,
+switches, relays and valves. The first bug was literally an insect that got caught inside the workings
+of an early machine and stopped it behaving as the programmers had intended. There is never any relation to rabbits.
 
+### To the Moon and back
 
-To the Moon and back
+One part of JFK's mission to land a man on the moon that often isn't given enough credit is the guidance system that did all the calculations in real time to plot the path from the earth to the moon as both of them were speeding through space, turing around each other and around the sun. The computer that did that had less than 1 millionth the power of your mobile phone and nowhere near as much memory. The team lead on that project was a woman called Margaret Hamilton and the team had huge number of physical challenges that modern programmers just dont face today. One was the need to store the programs and data needed on the flight in memory. The only way to store that much memory at the time was in knitted memory, iron cores were magnetized and slotted into a woven matrix to create a binary image of the program.
 
-Margaret Hamilton lead the team to develop the guidance systems for the Appollo 11 man on the moon project. Show stack of papers. This was with knitted memory and less programming power than is available in your mobile phone today. It was about 1/millionth.
+### Modern Space !
 
-### Space !
-
-Mars
-
-Robots are all software controlled. Calculations of trajectories earth -> mars
-are all software (very complicated maths).
+Space exploration without humans and Mars in particular continues to be an area where software is crucial.  The Mars rover robots are all software controlled and mostly autonomous. Calculations of trajectories earth -> mars are all software (very complicated maths).
 
 and another woman is notable for writing the parachute guidance systems in the recent mars mission where rovers were dropped from parachutes onto surface.
+
+### Now
 
 All this time, the processing of machines has got faster and faster as electronics have improved, got smaller, lighter, more reliable. We've gone from hard wired - physical wiring to switches, punched cards, paper tapes etc. so getting information into the machine and getting results back out has always been a challenge. Graphs drawn, lights, beeps and boops.
 
@@ -108,6 +118,9 @@ Fruit Flies like a banana
 How do we interpret that?
 
 
+Clear, careful thinking.
+
+How do we represent data. What should the logic be. What should be the flow, what needs to happen first, what should come later?
 
 ## Unplugged
 
@@ -158,6 +171,9 @@ Make a sandwich
 Role play
 Boolean logic
 
+Different robots understand different instructions. Some are mathematical, some are more general,
+some know about tea and milk, others can do the same job but need to be told exactly wehre to go
+exact positions, exact commands. High level vs low level languages.
 
 
 ## Scratch
@@ -275,7 +291,7 @@ How could we make the game ending better? You win?
 
 Use *Pens* to draw pretty pictures
 
-Draw a square. Draw a triangle, draw more shapes.
+Maths figures, moving around in relative space. Using angles and distances. Draw a square. Draw a triangle, draw more shapes.
 
 Turn n degrees, move forward, turn n degrees
 
@@ -303,22 +319,27 @@ Suited to older children but not that impressive.
 
 1 hour
 
-PJ?
+This is a relatively new hardware platform - a tiny board (a bit like the raspberry pi) but
+with bluetooth, compass, tiny display, accelerometer.
 
-New hardware platform - tiny board (a bit like the raspberry pi) but with bluetooth,
- compass, tiny display, accelerometer. Runs a number of different programming languages
- including Micro Python.
+Unlike Scratch, which is almost entirely visual, programming the microbit is edging closer to
+"real" programming using a text-based language called Micro Python.
 
- We will try running some simple games and programs and look at how this text based
- languages are different from the visual ones we've been looking at up to now.
+We will try running some simple programs and a few games and look at how this text based language is different from the visual ones we've been looking at up to now.
 
- Download from http://codewith.me. connect ot pc with usb cable.
+Where Scratch scratch hid a lot of complexity behind snap together lego pieces, we
+are going to be writing closer to actual instructions. Where Scratch was interpreting our commands
+"live" and we could make changes that were instantly reflected in the behaviour of the program,
+Micro Python is a compiled language and follows a different lifecycle. We write code in text,
+we send the code down to the device where it is compiled into it's own internal representation,
+then the program executes. This is faster to run and only needs to be downloaded once for each
+version, but it's not as reactive and live as Scratch.
 
- Type code into window and press flash to download.
+Download from http://codewith.me. connect to pc with usb cable.
 
- Errors are shown scrolling across the screen on the device.
+Type code into window and press flash to download.
 
-Download simple game
+Errors are shown scrolling across the screen on the device.
 
 Show a picture
 
@@ -333,44 +354,225 @@ Run until button pushed
 Play with it
 
 Change the picture on an event
-accelerometer
 
 Can we clean it up.
 
 Example games:
 
+Displaying letter
+Display scrolling text
+Sleep
+Reacting to events
+
+Simple Tamagotchi
+
 Magic 8 ball
 
 balancing ball - play and adapt it. Make it more responsive, less responsive.
 
+flappy bird
+
 
 ## Sonic Pi
 
-1 hour
+1 hour - Only if we have enough time.
 
-Only if we have enough time.
+Simplest programming language, using sound and music for instant feedback without all the
+clutter of more grown up languages.
 
-Simple programming language for music. Play note
+### First Program
 
-Play notes in sequence
+~~~
 
-Sleep for a delay time.
+play 55
 
-Changing length of delay with a variable.
+~~~
+
+Done. Boom!
+
+Play is a built-in function that can run anytime we want. Here the value 55 represents a pitch or note.
+Pitches can be high or low, so if we lower the value do we get a lower note?
+
+~~~
+
+play 40
+
+~~~
+
+Yes! similarly if we raise the value, does the note get higher?
 
 
-Transposing music using variables - root note and intervals
+~~~
 
-Scales
+play 70
 
-Major scale definition
-Same form of code but with different starting note. same code, different variable.
+~~~
+
+Yes!
+
+Ok, so we are using a number to represent a musical note's value. This is what we mean by
+abstraction. We are using a number in place of a concept in the real world.
+
+### Second Program
+
+~~~
+
+play 55
+sleep 1
+play 60
+
+~~~
+
+Delay between notes. Here the value represents an amount of time (1 second). In same
+way we changed the note value, we can change the sleep value. Smaller values give shorter wait
+times. We are using the same numbers in different ways - different abstractions.
+
+Playing notes one after another gives us a tune.
+
+We can also use colon and a letter and number combination to represent a note in a more
+intuitive way:
+
+~~~
+
+play :C5
+sleep 0.5
+
+~~~
+
+Note that incidentals are available, sharps use an ‘s’ in between the note name and the octave, flats use a ‘b’.
+
+~~~
+
+play :Cs5
+sleep 0.5
+play :Eb5
+sleep 0.5
+
+~~~
+
+Finally, especially if you are delving into algorithmic composition, you can play with a note value defined in a variable:
+
+~~~
+
+middle_c = 60
+
+play middle_c
+sleep 0.5
+
+~~~
+
+### Sequences
+
+Sequences of single notes are played using play_pattern or play_pattern_timed. If you are using a specific tempo, you can use play_timed to play a sequence of notes using the current tempo. The notes are written as a comma delimited list:
+
+~~~
+
+play_pattern [40, 45, 44, 43]
+
+~~~
+
+If you prefer to explicitly specify timing, you can use play_pattern_timed and give individual delays between each pair of notes. Playing these two notes one after another:
 
 
-Repeating patterns
+~~~
 
-how many times to repeat something
+play 60
+sleep 0.5
+play 65
+sleep 0.75
 
+~~~
+
+is the same as this:
+
+~~~
+
+play_pattern_timed [60, 65], [0.5, 0.75]
+
+~~~
+
+If the delay between notes is the same we can shorten it to:
+
+~~~~
+
+play_pattern_timed [60, 65], 0.5
+
+~~~~
+
+We can also cycle the timing between values in the timing list by providing fewer timing values than note values.
+
+~~~
+
+play_pattern_timed [60, 65, 60, 62], [0.5, 0.2]
+
+~~~
+
+will alternate between delays of 0.5 and 0.2 seconds for each pair of notes. Using play_pattern makes the code more readable, you can keep related groups of notes together rather than long passages of single play/sleep pairs.
+
+### Scales
+
+~~~
+
+root = 36
+note = root
+
+12.times do
+  play note
+  sleep 0.5
+  note += 1
+end
+
+~~~
+
+### Chords
+
+A chord is a collection of notes played at the same time. Because it is a collection, sonic pi uses the same list notation that the play_pattern function used:
+
+~~~
+
+play_chord [ :C3, G3, :C4 ] # power chords !!!
+
+~~~
+
+
+### Elaboration
+
+Spooky directly from sheet music
+
+~~~
+use_synth :piano
+
+speed = 0.65  # set overall speed
+
+minim = 2 * speed
+crotchet = 1 * speed
+quaver = 0.5 * speed
+
+2.times do
+  play_pattern_timed [:A3, :C4, :E4, :A4], crotchet
+  play :F4
+  sleep minim
+  play_pattern_timed [:E4, :D4, :C4, :B3 ], quaver
+end
+
+play :A3
+sleep crotchet
+
+~~~
+
+### Further
+
+We can use samples, different synthesizers etc. to make more interesting sounds and use
+algorithms to vary the music.
+
+
+## What we did
+
+predicting behaviour
+Learned about Sequencing
+Looping
+abstractions and models of the world
+algorithms
 
 
 ## Review
