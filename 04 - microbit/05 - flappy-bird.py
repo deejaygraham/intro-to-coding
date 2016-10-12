@@ -6,32 +6,19 @@ from microbit import *
 import random
 
 # board dimensions
-width, height = 5, 5
-
+pixel_width, pixel_height = 5, 5
 Frame_Rate_In_Milliseconds = 20
-Increase_Score_After_Frames = 50
-Wall_Speed = 20 # number of frames between each time a wall moves a pixel to the left
-Wall_Generation_Speed = 100       # number of frames between each new wall
 
+# general game functions
 
-def display_game_over(score):
-    display.show(Image.SAD)
-    sleep(500)
-    display.scroll("Score: " + str(score))
-
-
-def bird_collides_with_wall(pipe, bird):
-    if pipe.get_pixel(bird[0], bird[1]) != 0:
-        return True
-
-    return False
-
-def hide_bird(bird): # flapping
-    display.set_pixel(bird[0], bird[1], 0)
-
-def draw_bird(bird): # flapping
-    display.set_pixel(bird[0], bird[1], 9)
-
+def increase_score_if_required(frame, score):
+    Increase_Score_After_Frames = 50
+    
+    if (frame % Increase_Score_After_Frames) == 0:
+        return score + 1
+        
+    return score
+    
 def display_count_down(fromValue):
     while fromValue > 0:
         display.show(fromValue)
@@ -39,86 +26,125 @@ def display_count_down(fromValue):
         fromValue -= 1
     display.clear()
 
+def display_game_over(score):
+    display.show(Image.SAD)
+    sleep(500)
+    display.scroll("Score: " + str(score))# wall functions
 
-display_count_down(5)
+# bird functions
 
+def hide_bird(bird): # flapping
+    display.set_pixel(bird[0], bird[1], 0)
+
+def draw_bird(bird): # flapping
+    display.set_pixel(bird[0], bird[1], 9)
+
+# wall functions
+
+def draw_wall(wall):
+    display.show(wall)
+    
+def should_create_wall(frame):
+    Wall_Created_After_Every = 100 
+    return (frame % Wall_Created_After_Every) == 0    
+
+def create_wall():
+    # create an image of a wall at the far end of the screen...
+    wall = Image("00003:00003:00003:00003:00003")
+    
+    # make a hole in the wall
+    # for flappy to get through
+    hole_in_the_wall_y = random.randint(0, pixel_height - 2) 
+    wall.set_pixel(pixel_width - 1, hole_in_the_wall_y, 0)      
+    wall.set_pixel(pixel_width - 1, hole_in_the_wall_y + 1, 0)  
+
+    return wall
+
+def bird_collides_with_wall(bird, wall):
+    if wall.get_pixel(bird[0], bird[1]) != 0:
+        return True
+
+    return False
+
+def should_wall_move(frame):
+    Wall_Moves_After_Every = 20 # number of frames between each time a wall moves a pixel to the left
+    return (frame % Wall_Moves_After_Every) == 0
+
+def move_wall(wall):
+    return wall.shift_left(1)    
+
+def calculate_gravity(gravity):
+
+    if button_a.was_pressed():
+        Flapping_Value = 8
+        gravity -= Flapping_Value
+        
+    gravity += 1
+    
+    Max_Gravity = 2
+    
+    if gravity > Max_Gravity:
+        gravity = Max_Gravity
+    
+    return gravity
+
+def calculate_new_displacement(displacement, gravity):
+
+    displacement += gravity
+
+    Max_Displacement = 99
+    Min_Displacement = 0
+    
+    if displacement > Max_Displacement:
+        y = Max_Displacement
+        
+    if displacement < Min_Displacement:
+        displacement = Min_Displacement
+        
+    return displacement
+
+    
 # left hand part of the screen, in the middle
 # consider orientation for buttons up, down
 bird = [ 1, 2 ] # x, y
+wall = create_wall()
 
-draw_bird(bird)
+gravity = 0
+displacement = 50
 
-# Global variables
-y = 50
-speed = 0
 score = 0
-frame = 0
+frameCounter = 0
 
-# Make an image that represents a pipe to dodge
-def make_pipe():
-    # make a pipe at the far end of the screen...
-    pipe = Image("00003:00003:00003:00003:00003")
-
-    last_line_x = 4
-
-    gap_position_y = random.randint(0, 3)               # random gap position
-    pipe.set_pixel(last_line_x, gap_position_y, 0)      # make a hole in the pipe
-    pipe.set_pixel(last_line_x, gap_position_y + 1, 0)  # for flappy to get through
-
-    return pipe
-
-# create first pipe
-pipe = make_pipe()
-
-currentFrame = 0
+# gane start
+display_count_down(5)
+draw_bird(bird)
 
 # Game loop
 while True:
 
-    currentFrame += 1
+    hide_bird(bird)
+    
+    frameCounter += 1
 
-    # show pipe
-    display.show(pipe)
+    draw_wall(wall)
 
-    # flap if button a was pressed
-    if button_a.was_pressed():
-        speed = -8
+    gravity = calculate_gravity(gravity)
+    displacement = calculate_new_displacement(displacement, gravity)
+    bird[1] = int(displacement / 20)
 
-    # show score if button b was pressed
-    #if button_b.was_pressed():
-        #display.scroll("Score:" + str(score))
-
-    # accelerate down to terminal velocity
-    speed += 1
-    if speed > 2:
-        speed = 2
-
-    # move bird, but not off the edge
-    y += speed
-    if y > 99:
-        y = 99
-    if y < 0:
-        y = 0
-
-    # draw bird
-    led_y = int(y / 20)
-    display.set_pixel(1, led_y, 9)
+    draw_bird(bird)
 
     # check for collision
-    if bird_collides_with_wall(pipe, bird):
+    if bird_collides_with_wall(bird, wall):
         display_game_over(score)
         break
 
-    # move wall left
-    if(frame % FRAMES_PER_WALL_SHIFT == 0):
-        pipe = pipe.shift_left(1)
+    if should_wall_move(frameCounter):
+        wall = move_wall(wall)
 
-    # create new wall
-    if(frame % FRAMES_PER_NEW_WALL == 0):
-        pipe = make_pipe()
-
-    # increase score
-    if (frame % Increase_Score_After_Frames) == 0:
-        score += 1
+    if should_create_wall(frameCounter):
+        wall = create_wall()
+        
+    score = increase_score_if_required(frameCounter, score)
 
     sleep(Frame_Rate_In_Milliseconds)
