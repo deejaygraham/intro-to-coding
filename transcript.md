@@ -2,6 +2,9 @@
 
 ## Welcome
 
+If you could do make what would you make?
+
+
 Hi, welcome to this introductory session on coding.
 
 ### Me
@@ -20,6 +23,8 @@ I don't want to spend any longer than necessary talking today, what I would like
 
 We're going to play with some code, make some things, break some things (maybe on purpose and definitely by accident) and put then them back together. We'll make lots of mistakes, go down blind alleys and hopefully discover some stuff. I want you to be fiddling with code, taking it apart to see how it works. You can't break anything and the worst thing that can happen is that we have to scrap your program and type it in again. No one will shout at you for getting something wrong. By making those mistakes you will get a better understanding of what is going on inside the mind of the computer and if something goes wrong it's not the end of the world, no one will die and no one will be eaten. It is normal for some of this to hurt your head to begin with but struggling with some of these concepts isn't anything to be frightened of but rather embraced. Programming (and understanding what is going on inside a computer) is a skill like any other. You don't have to be special to learn how to do it but it does take a little bit of time and effort to get used to applying that skill. Most of the work is going to be inside your head, not typing keys on the keyboard.
 
+It really is about ideas and imagination.
+
 ### Computers in Society
 
 Most people's ideas about computers come either from the movies (hackers) or from being made to use awful software in their own work, frequently badly designed software that makes them feel stupid for not knowing how to use it correctly.
@@ -29,17 +34,30 @@ Otherwise in popular culture and in the news, it's about building mobile apps or
 One example of the extreme creative side of coding is Sam Aaron, inventor of sonic pi (later), who writes code in nightclubs all over the world. His code creates music which he performs live in front
 club goers who usually can't tell it from a conventional dj.
 
+Programming is a discovery process where we start off knowing nothing about how to approach a problem, and gradual uncover a solution as we work. It's easier than you think and it's also more fun than you think.
 
 
 
-The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
 
 ### Code, Code Everywhere
 
+Software is now part of how the world works and
+The more approachable we feel technology is, the more we play with it, take them apart, tinker with them, the better we a sense of what's possible we have.
+
 Technology affects everything, AI in amazon recommendations, credit card fraud, making movies, medical research (data collection, analysis), medical devices (hearing aids), space exploration, home (Nest, Wifi, DVR), Cars (brakes, steering, engine control), iPods and mobiles
+
+Post Routing, Netflix and Amazon recommendatjions, aeroplanes, cheque processing,financial transactions, cd-players, radio, GPS OS, TIVO, TV, iPod,
+
+All general purpose computers but in special boxes with specific software that is not easy to change.
+Often designed not to be changeable. X-Box is a standard windows pc but with good hard drive, good graphics card. fancy box.
+
+Aeroplane is a set of networked computers in a really expensive fancy case.
+
+
 
 ### Skills
 
+Skills for thinking and communicating.
 Social skills, like making a movie - lots of specialised skills coming together with a common objective and working together and communicating. Not about working in your bedroom any more (if it ever was).
 
 Debugging good to confirm you version of reality. Often we think we have said one thing, the other person has understood something totally different
@@ -126,21 +144,41 @@ How do we represent data. What should the logic be. What should be the flow, wha
 
 1 hour
 
-We don't need a computer or any electronics
+(Mr Robot)
 
-Important skills for critical thinking, logic and visualization and imagination
+We don't need a computer or any electronics to have a wonderful time doing programming. The computer is good a repeating instructions very very quickly and is best thought of as a tool that extends what you personally are capable of.
+
+The most important skills for programming are clear, critical thinking, logic, visualization and imagination. Because of that we can do a lot of programming using pencil and paper or
+human machines. We start off with a problem and we have to try to understand that problem, it's usually too big to solve all in one go, and be able to break it up into smaller pieces, smaller problems that we can decide if they are the right size or do they have other, smaller problems hidden inside them?
+We use metaphors to describe how our program is like the world and how the parts of our program fit together like the parts in the real world.
+We also try to create a model of the world that helps to solve the problem in a way that we can represent easily inside our heads and inside the computer. That model only needs to be as good as it needs to be to deal with the problem, it should not model the entire universe in full detail (we will come back to this).
+
+In explaining what we want to do, we often (like english and poetry) can take a long time finding the exact right word and often when we pick the wrong word, others (or computers) can be confused and do the wrong thing or we can ask for the thing we want in the wrong way.
+
+Can you pass me the thing - is it a pencil, pen, table, ?
+
+Often the challenge of programming is saying what you mean in as concise a way as possible. Your programs need to communicate with two different parties - other humans who may reuse and build on your work, and the computer who has to do what you tell it. In this instance, the person acting out the instructions needs to understand what you want them to do.
+
+Link to robot instructions.
+
+Exercises like this are really what you are doing when you are programming "for real" using a computer,
+most of the activity is going on in your head. The program comes as a result of your thinking, not something inherent in the machine itself.
+
+Later on when you are writing a program, it can be helpful to adopt these strategies to debug a program that doesn't do what you want. Or mostly does what you want but sometimes goes wrong.
 
 Pencil and paper debugging
+
 Rubber Ducking - explaining the problem and what might be the cause of it.
 
 Using the scientific method
-Hypothesis.If that'strue what would we expect - look for ways your theory confirms what you see. Look for ways it contradicts what you see.
+
+Hypothesis. If that'strue what would we expect - look for ways your theory confirms what you see. Look for ways it contradicts what you see.
 
 
-Algoritjms
+Computers are used to working with very exacting language (the kind of rigour you only find in philosophy and mathematics or physics).
+Algorithms
 
-Put things in the gith ordder
-
+### Put things in the right  order
 
 Have a bath
 Bathing
@@ -148,6 +186,8 @@ Turn bath water on
 Get into Bath
 Wash
 Get out of the Bath
+
+Change the tyre on a car
 
 Have a birthday party
 Set plates
@@ -169,11 +209,24 @@ Make a sandwich
 
 
 Role play
-Boolean logic
+
+
 
 Different robots understand different instructions. Some are mathematical, some are more general,
 some know about tea and milk, others can do the same job but need to be told exactly wehre to go
 exact positions, exact commands. High level vs low level languages.
+
+We've been talking about algorithms.
+
+What makes a good algorithm. If you are making lunch for yourself, how long it takes could be your only requirement. You might be hungry. If you are a chef trying to feed 1000 people at a banquet and have to coordinate 100 kitchen staff, efficiency and speed might not be the consideration you choose. What if
+everyone is wanting the butter or a knife at the same time? Does everyone need their own fridge.
+
+Depending on what you want to achieve, your algorithm might work but take a lot longer or it might not work at all.
+
+Does you algorithm have to change when faced by with the real world. How does it match up. Are there big changes or small changes.
+
+
+Now we've got some mad programming skillz, lets move on to using a programming language on some actual computers.
 
 
 ## Scratch
@@ -195,6 +248,8 @@ Left hand side is where your program will run. Middle is set of building blocks 
 build the program (Scripts). Right hand side is where you drag the blocks and wire them up.
 
 Start and Stop buttons at the top.
+
+I have written the worst game in history and I am so proud, I would like to share it with you.
 
 ### Make the cat walk
 
@@ -271,7 +326,16 @@ touching. See that it will do something inside it when the touching is true?
 Make Variable from data. Score for this sprite only. Initialise at beginning.
 If touching, change score by 1.
 
-### Boolean Logic ???
+### Yes and No: Boolean Logic ???
+
+Is it a cat or is it a sandwich. If you ask a computer, it will say yes. If you ask a person, she will say cat. computers like to think in black and white terms, yes or no, true or false. So asking if something is a cat you can get a yes or no answer, the same as if you asked a human. It begins to get more subtle when the question has more than one part. Humans are good at looking at what the question is and deciding the best way to answer it, can it be answered yes or no or is the asker looking for a different reply? Computers are lazy and like to fall back on yes and no, particularly if you are asking a yes or no-able question. If the answer could be yes or no, you will get a yes or no answer.
+
+Breaking it down. If you ask is it a cat (yes) or a sandwich (no). Computer will look at first condition and because it is lazy will say that no matter what the second part of the question is, it can answer yes to the first bit. The or means is this thing you are asking about either one of these alternatives.
+
+If you ask a question like is this a cat and is it tortoise shell? The and forces the computer to do a bit more work. It can look at the thing and see if it is a cat. If it's not, it can answer no straightaway because there is no way it needs to work out the next bit, a simple no is all it requires. If it is a cat, it then it has to look at the cat's colour and work out if there is a match. Asking AND means does this thing have all the qualities I am asking about.
+
+We aren't restricted to asking questions about a single object at a time. We can ask is that a cat and is that other thing a bus? Is that a cat and is the sky blue?
+The same process goes on whatever the conditions. We can even build up more elaborate conditions if we want to.
 
 
 ### Let's end this:
@@ -295,7 +359,14 @@ Maths figures, moving around in relative space. Using angles and distances. Draw
 
 Turn n degrees, move forward, turn n degrees
 
+### What did we learning
 
+Decomposing a game into smaller parts.
+Putting things in the right order - sequence
+selection - is it on an edge?
+Repetition - keep going
+Variables - score, location, speed, colour
+Events - program start, end, mouse click, mouse move.
 
 ### Resources
 
