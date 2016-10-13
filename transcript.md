@@ -148,6 +148,8 @@ How do we represent data. What should the logic be. What should be the flow, wha
 
 We don't need a computer or any electronics to have a wonderful time doing programming. The computer is good a repeating instructions very very quickly and is best thought of as a tool that extends what you personally are capable of.
 
+Beginning coders need to experience a wide range of problems and to experiment in solving them using different strategies. The process is something like planning a strategy, designing a solution, writing the solution. Running the solution then reflecting on their solution and comparing their results with others. As with most other subjects, the process by which you arrive at a solution is more important than finding the right answer.
+
 The most important skills for programming are clear, critical thinking, logic, visualization and imagination. Because of that we can do a lot of programming using pencil and paper or
 human machines. We start off with a problem and we have to try to understand that problem, it's usually too big to solve all in one go, and be able to break it up into smaller pieces, smaller problems that we can decide if they are the right size or do they have other, smaller problems hidden inside them?
 We use metaphors to describe how our program is like the world and how the parts of our program fit together like the parts in the real world.
@@ -215,6 +217,8 @@ Role play
 Different robots understand different instructions. Some are mathematical, some are more general,
 some know about tea and milk, others can do the same job but need to be told exactly wehre to go
 exact positions, exact commands. High level vs low level languages.
+
+Can we divide a chocolate bar into 12 equal pieces. How do we do that? What would be the process for doing it. Can the students write down a process to do it. Can it be generalised to work with any size of bar and any number of pieces? What are the limits? Odd even numbers? Physical size?
 
 We've been talking about algorithms.
 
