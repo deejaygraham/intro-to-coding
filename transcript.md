@@ -770,3 +770,6 @@ http://welcome.projectspark.com/
 
 Notes on "How to Train your Robot"
 http://drtechniko.com/2012/04/09/how-to-train-your-robot/
+
+Programming Books (most approachable) I do pre-publication tech reviews for them but don't get anything financially.
+http://pragprog.com/
