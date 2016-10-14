@@ -766,6 +766,12 @@ https://twinery.org/
 Project Spark
 http://welcome.projectspark.com/
 
+Inklewriter - writing interactive stories, text adventures as text
+http://www.inklestudios.com/inklewriter/
+
+Good for getting across idea of interaction, then think about how that could be done in scratch or other language. Talk about what is actually running in the background to make the story work - programming language interpreted by a program, running on an OS, running on a machine. Turtles all the way down.
+
+
 ## Resources
 
 Notes on "How to Train your Robot"
