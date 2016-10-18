@@ -17,6 +17,7 @@ def display_game_over(ship, score):
     # blow up ship
     # take x of ship and blow up outwards
     blow_up_ship(ship)
+    sleep(500)
     display.show(Image.SAD)
     sleep(500)
     display.scroll("Score: " + str(score))
@@ -34,15 +35,13 @@ def draw_ship(ship):
     display.set_pixel(ship[0], ship[1], ship[2])
 
 def move_ship_left(ship):
-    
-    ship[0] = max(ship[0], 0)
+    ship[0] = max(ship[0] - 1, 0)
     return ship
-        
+
 def move_ship_right(ship):
-    
-    ship[0] = min(ship[0], pixel_width)
+    ship[0] = min(ship[0] + 1, pixel_width)
     return ship
-        
+
 def blow_up_ship(ship):
 
     hide_ship(ship)
@@ -50,7 +49,7 @@ def blow_up_ship(ship):
     draw_explosion(ship, ship[2], 1)
     sleep(200)
     display.clear()
-        
+
     for brightness in range(ship[2], 0, -1):
         draw_explosion(ship, brightness, 2)
         sleep(200)
@@ -115,13 +114,6 @@ while True:
     # increase speed once we are above a certain score...
     sleep(Frame_Rate_In_Milliseconds)
 
-    # check for button pushes...
-    if button_a.is_pressed():
-        ship = move_ship_left(ship)
-
-    if button_b.is_pressed():
-        ship = move_ship_right(ship)
-        
     if asteroid_collides_with_ship(asteroid, ship):
         display_game_over(ship, score)
         break
@@ -131,9 +123,14 @@ while True:
 
     if asteroid[1] == pixel_height:
         score += 1
-        
         asteroid = create_asteroid()
     else:
-        asteroid = move_asteroid(asteroid)
+        # check for button pushes...
+        if button_a.was_pressed():
+            #display.scroll('A')
+            ship = move_ship_left(ship)
+            #display.scroll(str(ship[0]) + ' ' + str(ship[1]))
+        elif button_b.was_pressed():
+            ship = move_ship_right(ship)
 
-    
+        asteroid = move_asteroid(asteroid)
