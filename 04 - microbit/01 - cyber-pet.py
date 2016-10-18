@@ -5,6 +5,6 @@ while True:
 
     if accelerometer.was_gesture("shake"):
         display.show(Image.HAPPY)
-        sleep(1000)
+        sleep(5000)
     else:
         display.show(Image.ASLEEP)
