@@ -1,7 +1,11 @@
 from microbit import *
 
 while True:
-    if button_a.is_pressed():
+    if button_a.is_pressed() and button_b.is_pressed():
+        display.scroll('AB')
+    elif button_a.is_pressed():
         display.scroll('A')
-    if button_b.is_pressed():
-        display.scroll('B :)')
+    elif button_b.is_pressed():
+        display.scroll('B')
+
+    sleep(100)
