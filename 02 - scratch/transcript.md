@@ -16,44 +16,78 @@ and click on the *Create* button
 The left hand side is where your program will run. The middle is set of building blocks you can use to
 build the program (Scripts). Right hand side is where you drag the blocks and wire them up.
 
+![create link](scratch-blank-environment.png)
 
 Note the Start and Stop buttons at the top.
 
-I have written the worst game in history and I am so proud, I would like to share it with you.
+
+## The Worst Game in History
+
+I feel quite proud that I have managed to devise the worst game in the history of computer games and because I am so proud, I would like to share it with you.
+
+
+## The Pitch
+
+I want to write a game where the scratch cat plays with the mouse (puns!). The cat scores points for catching the mouse and if it scores enough points, the game is over. Pretty exiting huh?
+
+## Building the Game
+
 
 ### Make the cat walk
 
-Drag move step across to right hand side and click on it with mouse. You should see the cat move a little bit.
-Play with changing the value in the box. What happens? What about a negative value?
+Drag move step across to right hand side and click on it with mouse.
 
-What do you think will happen?
+![move](drag-move.png)
 
-*Variable*
+You should see the cat move a little bit. Play with changing the value in the box. What happens?
+What about a negative value?
+
 
 ### Really make it walk
 
-Switch to the control section and drag a repeat block. Slide move into repeat block.
-Click on assembled blocks. What happens? Change the repeat value.
+Switch to the control section and drag a repeat block.
+
+![repeat](drag-repeat.png)
+
+Slide move into repeat block, notice how blocks light up as you move them together. Click on
+the assembled blocks. What happens? Change the repeat value.
+
+The repeat block surrounds the other block, implying that whatever is inside it will run forever.
 
 Let's make it walk all the way across the screen. Change repeat to a forever loop.
 Pull movement block out and drag repeat block out. Drag on the forever loop.
+
+![forever](drag-forever.png)
+
+Notice when you have a block of blocks, you have to disassemble them from the bottom can't get rid of the top block on it's own!
 
 Click on block - will go off screen and you can drag it back on but it will keep trying
 to escape!!!
 
 Lets try to correct that. Go to motion blocks and use if on edge, bounce.
+
+![bounce](if-on-edge.png)
+
 Now it's upside down!
+
+Look at bottom of page and right click on cat sprite.
+
+![menu](sprite-info-menu.png)
 
 Go to info on sprite and change rotation symbol to left right.
 
+![info](sprite-info.png)
 
-*Repetition*
-*Predicting Behaviour*
 
-### Bit Rubbish
+### Rubbish
 
-Now that it's behaving like we want let's try and make it more realistic. For a
-cartoon cat.
+Now that it's behaving like we want let's try and make it more realistic. For a cartoon cat.
+
+Sprites have a visual property called their costume. This is a range of image they display at any one time.
+
+Our cat is showing a single costume at the moment. We can simulate animation by switching between two different costumes with a small delay in between each change.
+
+Switch to Looks and drag on a costume block.
 
 Costume 1
 move 10
@@ -62,61 +96,67 @@ switch costume 2
 move 10
 wait 0.25
 
-*Repetition*
+It's running very quickly now. How do we slow it down? Add a wait block.
 
-Is there a better way - algorithm works but is a better way?  Next Costume. and remove other blocks
+Is there a better way - algorithm works but is a better way?  Use **Next Costume** and remove other blocks
 
-Notice when you have a block of blocks, you have to disassemble them from the bottom
-can't get rid of the top block on it's own!
+![costume](looks-costume.png)
 
-Looks better? What about the wait, we can make that zero?
+This will cycle through all the costumes the cat has available. Looks better? What about the wait, we can make that zero?
 
 ### Events
 
-Let's make it start when we start the game, rather than when we click on it.
-What about if we clicked on cat?
+Clicking on the blocks to get the cat to do something is all very well but it's not what we want to see in the finished game. We want the cat to start running as soon as the game starts.
+
+![start event](when-start.png)
 
 ### Game
 
+Now we've got the mouse moving, let's try making it more like a proper (if really bad) game.
+
 Let's try keeping the mouse moving and if the cat catches up with you, it scores a point!
 
-Add *point towards mouse pointer* at end of blocks.
+Add **point towards mouse pointer** at end of blocks.
 
-Follows you around the screen.
+![point](point-to-mouse.png)
 
-How does it catch you?
+So now the cat, follows you around the screen.
 
-Test where mouse pointer and cat are.
+### Here's the Catch
 
-In sensing, there is a *touching* block. Add If block (from control) and slot in the
-touching. See that it will do something inside it when the touching is true?
+How does it catch you? We need to test where mouse pointer and cat are.
+
+In sensing, there is a **touching** block. Drag the touching block onto our program. Notice it's a different shape and doesn't seem to fit with anything else. We need somewhere for it to go. Luckily there is somewhere for it to go. That is an if block. **If** s live in the control area.
+
+![if](if-then-touching.png)
+
+Add If block (from control) and slot in the touching. Hinting that it will do something inside it when the
+sprite is touching mouse pointer? But what?
 
 ### Keeping Score
 
-Make Variable from data. Score for this sprite only. Initialise at beginning.
-If touching, change score by 1.
+Make Variable from data. Score for this sprite only.
 
-### Yes and No: Boolean Logic ???
+![score](new-variable.png)
 
-Is it a cat or is it a sandwich. If you ask a computer, it will say yes. If you ask a person, she will say cat. computers like to think in black and white terms, yes or no, true or false. So asking if something is a cat you can get a yes or no answer, the same as if you asked a human. It begins to get more subtle when the question has more than one part. Humans are good at looking at what the question is and deciding the best way to answer it, can it be answered yes or no or is the asker looking for a different reply? Computers are lazy and like to fall back on yes and no, particularly if you are asking a yes or no-able question. If the answer could be yes or no, you will get a yes or no answer.
+Initialise at beginning before the game starts. If touching, change score by 1.
 
-Breaking it down. If you ask is it a cat (yes) or a sandwich (no). Computer will look at first condition and because it is lazy will say that no matter what the second part of the question is, it can answer yes to the first bit. The or means is this thing you are asking about either one of these alternatives.
-
-If you ask a question like is this a cat and is it tortoise shell? The and forces the computer to do a bit more work. It can look at the thing and see if it is a cat. If it's not, it can answer no straightaway because there is no way it needs to work out the next bit, a simple no is all it requires. If it is a cat, it then it has to look at the cat's colour and work out if there is a match. Asking AND means does this thing have all the qualities I am asking about.
-
-We aren't restricted to asking questions about a single object at a time. We can ask is that a cat and is that other thing a bus? Is that a cat and is the sky blue?
-The same process goes on whatever the conditions. We can even build up more elaborate conditions if we want to.
+![score](keeping-score.png)
 
 
 ### Let's end this:
 
 Bit too easy for cat, when score increases, move cat away again. Go to random position.
 
+![random](random-position.png)
+
 Now, what about if we get to a big value?
 
 Let's put in a check to say we will end the game when we get to 50? If operators
 comparison. Add MaxScore variable. Set it to 50 at start. If Score > MaxScore then end.
 Stop this script.
+
+![finished](finished-game.png)
 
 How could we make the game ending better? You win?
 
