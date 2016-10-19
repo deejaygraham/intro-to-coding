@@ -771,6 +771,21 @@ http://www.inklestudios.com/inklewriter/
 
 Good for getting across idea of interaction, then think about how that could be done in scratch or other language. Talk about what is actually running in the background to make the story work - programming language interpreted by a program, running on an OS, running on a machine. Turtles all the way down.
 
+processing
+https://processing.org
+Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts
+
+http://www.astronomy.com/news/2016/10/voyager-mission-computers
+http://www.gadgette.com/2016/03/15/women-in-tech-history-margaret-hamilton/
+
+http://www.gadgette.com/2016/03/23/women-in-tech-history-grace-hopper-admiral-programmer-and-rebel/
+
+http://www.gadgette.com/2016/03/29/women-in-tech-history-eniac-and-the-programming-pioneers-that-nobody-knew/
+
+http://www.gadgette.com/2016/04/05/women-in-tech-history-katherine-johnson-the-woman-who-guided-us-to-the-moon/
+
+http://www.gadgette.com/2016/04/15/women-in-tech-history-bletchley-park/
+
 
 ## Resources
 

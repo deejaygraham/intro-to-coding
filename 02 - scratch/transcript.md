@@ -2,7 +2,7 @@
 
 1 hour
 
-Scratch is a visual programming language that you can use to make simple programs and games. It's
+Scratch is a **visual programming language** that you can use to make simple programs and games. It's
 aimed primarily at children but anyone can use it to get started with programming.
 
 There are versions you can download to your machine or you can get started really quickly using the website.
@@ -13,7 +13,7 @@ and click on the *Create* button
 
 ![create link](scratch-create-link.png)
 
-The left hand side is where your program will run. The middle is set of building blocks you can use to
+The left hand side is where your program will run. The middle is set of **building blocks** you can use to
 build the program (Scripts). Right hand side is where you drag the blocks and wire them up.
 
 ![create link](scratch-blank-environment.png)
@@ -23,7 +23,7 @@ Note the Start and Stop buttons at the top.
 
 ## The Worst Game in History
 
-I feel quite proud that I have managed to devise the worst game in the history of computer games and because I am so proud, I would like to share it with you.
+I feel quite proud that I have managed to devise the **worst game in the history** of computer games and because I am so proud, I would like to share it with you and have you build it with me.
 
 
 ## The Pitch
@@ -35,26 +35,26 @@ I want to write a game where the scratch cat plays with the mouse (puns!). The c
 
 ### Make the cat walk
 
-Drag move step across to right hand side and click on it with mouse.
+From the **Movement** tab, drag a **move** block across to the right hand side and click on it with your mouse.
 
 ![move](drag-move.png)
 
-You should see the cat move a little bit. Play with changing the value in the box. What happens?
-What about a negative value?
+You should see the cat move a little bit. Experiment with **changing the value** in the box. What happens?
+What happens when you enter a negative value? Is that what you thought it would do?
 
 
 ### Really make it walk
 
-Switch to the control section and drag a repeat block.
+Switch to the **Control** section and drag a **repeat** block.
 
 ![repeat](drag-repeat.png)
 
-Slide move into repeat block, notice how blocks light up as you move them together. Click on
+Slide move into the repeat block, notice how **blocks light up** as you move them together. Click on
 the assembled blocks. What happens? Change the repeat value.
 
-The repeat block surrounds the other block, implying that whatever is inside it will run forever.
+The repeat block surrounds the other block, implying that whenever that runs, the things inside it will run.
 
-Let's make it walk all the way across the screen. Change repeat to a forever loop.
+Let's make it walk all the way across the screen. Change **repeat** to a **forever** loop.
 Pull movement block out and drag repeat block out. Drag on the forever loop.
 
 ![forever](drag-forever.png)
