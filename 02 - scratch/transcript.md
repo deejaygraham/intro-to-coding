@@ -90,12 +90,12 @@ Our cat is showing a single costume at the moment. We can simulate animation by 
 
 Switch to **Looks** and drag on a **costume** block.
 
-Switch to Costume 1
-Move 10
-Wait 0.25
-Switch costume 2
-Move 10
-Wait 0.25
+* Switch to Costume 1
+* Move 10
+* Wait 0.25
+* Switch costume 2
+* Move 10
+* Wait 0.25
 
 It's running very quickly now. How do we slow it down? Add a wait block.
 
