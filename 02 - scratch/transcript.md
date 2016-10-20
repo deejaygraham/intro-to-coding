@@ -210,12 +210,13 @@ https://scratch.mit.edu/projects/118819/
 
 ### What Have We Learned?
 
-Decomposing a problem into smaller parts.
-Putting things in the right order - sequence
-Selection - is it on an edge, is the game over?
-Repetition - forever blocks
-Variables - score, location, speed, colour
-Events - program start, end, mouse click, mouse move.
+* Decomposing a problem into smaller parts.
+* Putting things in the right order - sequence
+* Predicting Behaviour
+* Selection - is it on an edge, is the game over?
+* Repetition - forever blocks
+* Variables - score, location, speed, colour
+* Events - program start, end, mouse click, mouse move.
 
 
 ### Resources
