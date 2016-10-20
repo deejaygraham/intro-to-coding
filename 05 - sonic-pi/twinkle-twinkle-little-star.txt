@@ -1,0 +1,101 @@
+# Welcome to Sonic Pi v2.9
+
+# Can we make this shorter
+# How can we play it in a different key
+# How can we use better musical terms
+# How can we adjust the tempo?
+
+play :C4
+sleep 1
+play :C4
+sleep 1
+play :G4
+sleep 1
+play :G4
+sleep 1
+play :A4
+sleep 1
+play :A4
+sleep 1
+play :G4 # Star
+sleep 2
+
+play :F4
+sleep 1
+play :F4
+sleep 1
+play :E4
+sleep 1
+play :E4
+sleep 1
+play :D4
+sleep 1
+play :D4
+sleep 1
+play :C4 # Are
+sleep 2
+
+# Second Line
+play :G4 # Up
+sleep 1
+play :G4
+sleep 1
+play :F4
+sleep 1
+play :F4
+sleep 1
+play :E4
+sleep 1
+play :E4
+sleep 1
+play :D4
+sleep 2
+
+play :G4 # Like
+sleep 1
+play :G4
+sleep 1
+play :F4
+sleep 1
+play :F4
+sleep 1
+play :E4
+sleep 1
+play :E4
+sleep 1
+play :D4
+sleep 2
+
+# Third Line
+
+play :C4
+sleep 1
+play :C4
+sleep 1
+play :G4
+sleep 1
+play :G4
+sleep 1
+play :A4
+sleep 1
+play :A4
+sleep 1
+play :G4 # Star
+sleep 2
+
+play :F4 # How
+sleep 1
+play :F4
+sleep 1
+play :E4
+sleep 1
+play :E4
+sleep 1
+play :D4
+sleep 1
+play :D4
+sleep 1
+play :C4 # Are
+sleep 2
+
+# End
