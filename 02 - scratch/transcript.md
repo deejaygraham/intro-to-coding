@@ -165,12 +165,6 @@ Stop this script.
 
 How could we make the game ending better? You win?
 
-### Robot Finds Kitten
-
-If you would like to see a more complete game, I wrote a game with my oldest son a long time ago, based on an internet meme. Robot Finds Kitten which is available for x-box and playstation and lots of other platforms. The game uses terrible graphics and background colours. You can play the game and look at the structure of the game here:
-
-https://scratch.mit.edu/projects/118819/
-
 
 ### Turtles
 
@@ -195,12 +189,23 @@ Keep adding blocks to draw a square.
 
 Can we change it to make it shorter and easier to read?
 
-![turtle](https://scratch.mit.edu/projects/118819/)
+![turtle](finished-turtle.png)
+
+What else can we make, rotation and repeating patterns, drawing a house, drawing circles, changing colours, pen widths.
 
 
 ### Community
 
 One of the best things about scratch is that it all projects on the site have two modes. One to run the game, but you can look at the internals (not something you can ordinarily do) and copy the project and adapt it yourself. Scratch is setup to support community and sharing.
+
+
+### Robot Finds Kitten
+
+Before we leave scratch, I'd like to share with you another one of my awful games.
+
+This is a more complete game, I wrote a game with my oldest son a long time ago, based on an internet meme. Robot Finds Kitten which is available for x-box and playstation and lots of other platforms. The game uses terrible graphics and background colours by design and is meant to be among the most pointless available. You can play the game and look at the structure of the game here:
+
+https://scratch.mit.edu/projects/118819/
 
 
 ### What Have We Learned?
