@@ -4,7 +4,18 @@ Sonic Pi
 
 Sam Aaron
 
-Easy first step into "real" programming
+Simplest programming language, using sound and music for instant feedback without all the
+clutter of more grown up languages. Easy first step into "real" programming. Real programming you are usually writing text in some kind of editor (think writing document like using Word but instead of sending it to printer or to human via email) and then asking the computer to do what it does.
+
+
+Download it from:
+
+[http://sonic-pi.net](http://sonic-pi.net)
+
+Comes with lots of great help, example code you can cut and paste and run.
+
+Notice code area, buttons along the top and execution area at the side.
+
 
 ## First Program
 
@@ -14,14 +25,18 @@ play 60
 
 ~~~
 
-Our first program, plays a note and then stops. Not very exciting but we have written some text, had the computer read it, understand it and decide what to do with it.
+Press the Run button when you are done typing.
+
+Our first program, plays a note and then stops. Not very exciting but we have written some text, had the computer read it, understand it and decide what to do with it. **Play** is an instruction and **60** is data. We can use the same instruction and give it different data for a different outcome.
 
 We can change the value 0 - 255 and see what changes about the sound we hear. So we can see that the number represents a pitch or a musical note.
+
+What happens is we deliberately spell play wrong? What happens when we fix it?
 
 
 ## Second Program
 
-Another way to represent pitches is using names of notes. There's a special notation for this. 48 maps to the note C and it's in the third octave, so we say it's C3. Like this:
+Another way to represent pitches, in a more intuitive way, is using names of notes. There's a special notation for this. 48 maps to the note C and it's in the third octave, so we say it's C3. Like this:
 
 ~~~
 
@@ -31,10 +46,35 @@ play :C4
 
 Make sure you have a colon in there as well. That's just to tell the computer that the next thing is something it should recognize as a special thing.
 
+### incidentals
+
+Note that incidentals are available, sharps use an ‘s’ in between the note name and the octave, flats use a ‘b’.
+
+~~~
+
+play :Cs5
+sleep 0.5
+play :Eb5
+sleep 0.5
+
+~~~
+
+Finally, especially if you are delving into algorithmic composition, you can play with a note value defined in a variable:
+
+~~~
+
+middle_c = 60
+
+play middle_c
+sleep 0.5
+
+~~~
+
+
 ![map](midi-mapping.jpg)
 
 
-## Rests
+### Rests
 
 Music is about more than notes, it's also about the gaps between notes. Type this
 
@@ -47,7 +87,14 @@ sleep 1
 
 ~~~
 
-What does the 1 represent. It's not a note value now, we are using a number to represent a time interval. What happens when you increase or decrease the time? Use 10 or try 0.25
+What does the 1 represent. It's not a note value now, we are using a number to represent a time interval.
+In same way we changed the note value, we can change the sleep value.
+
+What happens when you increase or decrease the time? Use 10 or try 0.25
+
+Smaller values give shorter wait times. We are using the same numbers in different ways - different abstractions.
+
+Playing notes one after another gives us a tune.
 
 
 ## Simple Tunes
@@ -78,14 +125,14 @@ Notice the last note is longer than the others because we have given the note tw
 Anybody guess what the tune is?
 
 
-## And Complete It
+### And Complete It
 
 ![twinkle](twinkle-twinkle-little-star.png)
 
 Can you complete the tune? Or add more to it? Maybe work in pairs.
 
 
-## Tidying up
+### Tidying up
 
 This code is starting to get a bit unwieldy, it could do with some tidying up. How about we change twinkle twinkle to make it a bit nicer.
 
@@ -126,22 +173,43 @@ We have cut down the notes almost in half. If we need to change something, we ha
 
 or we could use:
 
-play_timed and give it a list of notes with delays between them.
-
 ~~~
 
 play_pattern_timed [ :C4, :C4, :G4, :G4, :A4, :A4, :G4 ], [ 1, 1, 1, 1, 1, 1, 2 ]
 
 ~~~
 
+If the delay between notes is the same we can shorten it to:
+
+~~~~
+
+play_pattern_timed [ :C4, :G4 ], 0.5
+
+~~~~
+
 ## Play a Scale
 
-Intervals and maths
+We can play a chromatic (every note) scale like running all the way up a piano keyboard like this:
+
+~~~
+
+root = 36
+note = root
+
+12.times do
+  play note
+  sleep 0.5
+  note += 1
+end
+
+~~~
 
 
 ## Halloween Challenge
 
-In honour of halloween, you can do all sorts of music. Here's a quick version of the "villain" trope from the silent movies but you might recognize from cartoons.
+Sonic Pi really is a music programming languagae and let's you make all sorts of music.
+
+In honour of halloween, here's a quick version of the "villain" trope from the silent movies but you might also recognize from cartoons.
 
 ![villain](mysterioso-pizzicato.png)
 
@@ -168,13 +236,61 @@ sleep crotchet
 
 ~~~
 
+### Chords
+
+A chord is a collection of notes played at the same time. Because it is a collection, sonic pi uses the same list notation that the play_pattern function used:
+
+~~~
+
+play_chord [ :C3, G3, :C4 ] # power chords !!!
+
+~~~
+
+You can also use chords explicitly...
+
+~~~
+
+play chord(:E5, :major)
+
+~~~
+
 ## Frozen
 
 If you really get into composition this way, there's lots you can do. Here's a version of the Disney song "Let it Go" from the film "Frozen"
 
 
+Transposing
+
+## Random
+
+We can talk about randomizing notes by using the **rrand_i** function. This is a built in function that will give us back a random value between 50 and 95 every time we ask for it.
+
+~~~
+
+8.times do
+  play rrand_i(50, 95)
+  sleep 0.125
+end
+
+~~~
+
+We can make things sound a little bit more musical by only picking notes that belong to a chord:
+
+~~~
+
+loop do
+  play chord(:a3, :minor).choose,
+  sleep 0.2
+end
+
+~~~
 
 ## Loops
+
+We can use samples, different synthesizers etc. to make more interesting sounds and use
+algorithms to vary the music.
+
+
 
 
 ## Live Playing
@@ -184,3 +300,17 @@ If you really get into composition this way, there's lots you can do. Here's a v
 ## Adding Interest
 
 ## Synths
+
+
+### What Have We Learned?
+
+* Predicting Behaviour
+* Putting things in the right order - sequence
+* Selection - is it on an edge, is the game over?
+* Repetition - iteration blocks, loops
+* Variables - notes, rests
+* Abstraction - is it a note, is it a time value. We are using a number to represent a musical note's value. This is what we mean by abstraction. We are using a number in place of a concept in the real world.
+
+### Resources
+
+[http://sonic-pi.net](http://sonic-pi.net)
