@@ -8,7 +8,11 @@ Easy first step into "real" programming
 
 ## First Program
 
+~~~
+
 play 60
+
+~~~
 
 Our first program, plays a note and then stops. Not very exciting but we have written some text, had the computer read it, understand it and decide what to do with it.
 
@@ -19,7 +23,11 @@ We can change the value 0 - 255 and see what changes about the sound we hear. So
 
 Another way to represent pitches is using names of notes. There's a special notation for this. 48 maps to the note C and it's in the third octave, so we say it's C3. Like this:
 
+~~~
+
 play :C4
+
+~~~
 
 Make sure you have a colon in there as well. That's just to tell the computer that the next thing is something it should recognize as a special thing.
 
@@ -27,12 +35,17 @@ Make sure you have a colon in there as well. That's just to tell the computer th
 
 
 ## Rests
+
 Music is about more than notes, it's also about the gaps between notes. Type this
+
+~~~
 
 play :C4
 sleep 1
 play :C4
 sleep 1
+
+~~~
 
 What does the 1 represent. It's not a note value now, we are using a number to represent a time interval. What happens when you increase or decrease the time? Use 10 or try 0.25
 
@@ -78,9 +91,13 @@ This code is starting to get a bit unwieldy, it could do with some tidying up. H
 
 We can set up our timing so that we only need to change the time values in one place.
 
+~~~
+
 root = 60
 quarter_note = 1
 half_note = quarter_note * 2
+
+~~~
 
 We can also notice that we are repeating notes so we can do something like:
 
