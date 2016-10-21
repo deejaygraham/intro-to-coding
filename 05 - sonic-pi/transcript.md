@@ -10,7 +10,7 @@ Download it from:
 
 [http://sonic-pi.net](http://sonic-pi.net)
 
-Comes with lots of great help, example code you can cut and paste and run.
+Comes with lots of great help, example code you can cut and paste and run. If you get stuck, look at the help and see if there's code you can steal and adapt to what you want.
 
 Notice code area, buttons along the top and execution area at the side.
 
