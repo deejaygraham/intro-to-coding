@@ -1,8 +1,6 @@
 # Sonic Pi
 
-Sonic Pi
-
-Sam Aaron
+Sonic Pi developed Sam Aaron, developed to make music programming accessible and give fast feedback to young people experimenting with computers. His experience has been that even the most disengaged students can find something that captures their imagination in the music environment.
 
 Simplest programming language, using sound and music for instant feedback without all the
 clutter of more grown up languages. Easy first step into "real" programming. Real programming you are usually writing text in some kind of editor (think writing document like using Word but instead of sending it to printer or to human via email) and then asking the computer to do what it does.
@@ -163,6 +161,7 @@ end
 2.times do
   play root + 9
   sleep quarter_note
+end
 
 play root + 7
 sleep half_note
@@ -201,6 +200,14 @@ note = root
   sleep 0.5
   note += 1
 end
+
+~~~
+
+Of course, sonic pi also has a scale function built in, to save you from the maths:
+
+~~~
+
+play scale(:c3, :major)
 
 ~~~
 
@@ -246,20 +253,20 @@ play_chord [ :C3, G3, :C4 ] # power chords !!!
 
 ~~~
 
-You can also use chords explicitly...
+You can also use chords explicitly, let's play the notes in a chord...
 
 ~~~
 
-play chord(:E5, :major)
+chord(:e3, :major7).each do |n|
+  play n
+  sleep 0.5
+end
+
+play chord(:e3, :major7)
+sleep 2
 
 ~~~
 
-## Frozen
-
-If you really get into composition this way, there's lots you can do. Here's a version of the Disney song "Let it Go" from the film "Frozen"
-
-
-Transposing
 
 ## Random
 
@@ -285,21 +292,57 @@ end
 
 ~~~
 
-## Loops
+## Live Loops
 
 We can use samples, different synthesizers etc. to make more interesting sounds and use
 algorithms to vary the music.
 
+~~~
 
+use_bpm 52
 
+live_loop :bass do
+  [:d2, :a2, :b2, :g2].each do |note|
+    8.times do
+      play note, release: 0.2
+      sleep 0.25
+    end
+  end
+end
 
-## Live Playing
+~~~
 
-## Random Choice
+We can put that together with another loop to give us a drum and base theme
 
-## Adding Interest
+~~~
+
+live_loop :kick do
+  sample :drum_bass_hard
+  with_fx :slicer do
+    sample :drum_bass_hard
+  end
+  sleep 0.5
+end
+
+~~~
+
 
 ## Synths
+
+All of the sounds so far have been using the default sound from a synthesizer called beep. We can use any kind of synthesizer we want using
+
+~~~
+
+use_synth :piano
+
+~~~
+
+There's much more to be explored here but I hope that has given you some ideas for what can be done.
+
+
+## Frozen
+
+If you really get into composition this way, there's lots you can do. Here's a version of the Disney song "Let it Go" from the film "Frozen"
 
 
 ### What Have We Learned?
