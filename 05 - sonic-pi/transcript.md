@@ -314,6 +314,8 @@ end
 
 We can put that together with another loop to give us a drum and base theme
 
+### Samples
+
 ~~~
 
 live_loop :kick do
