@@ -29,6 +29,20 @@ Often designed not to be changeable. X-Box is a standard windows pc but with goo
 Aeroplane is a set of networked computers in a really expensive fancy case.
 
 
+## Inspiration
+
+Space
+
+Moon landing - guidance computer
+
+Voyager computers
+
+Mars rovers
+
+Mars continuing mission
+
+
+
 
 ### Skills
 
@@ -186,13 +200,23 @@ Wife and Mother, Admiral in the US Navy. Invented the first compiler. Helped to 
 
 ## Margaret Hamilton
 
+Managed project to calculate moon landing, running a progam on a computer 1 million times less powerful than the mobile phone you have in your pocket.
+
+
+## Katherine Johnson
+
+Calculations to take rocket to the moon.
+
+
 
 ### M
 
 
 
 
-eaching computational thinking: Aside from simply teaching how programming works, we need to ensure that young people can understand the way that human concerns are translated into problems that computers can help solve. Like media literacy or general critical thinking skills, we should provide this information as a necessary part of teaching students to understand the systems that run the world around them. It’s essential that concerns like ethics and systemic biases be incorporated into any education about technology systems.
+Teaching computational thinking:
+
+Not simply teaching how programming works, we need to ensure that young people can understand the way that human concerns are translated into problems that computers can help solve. Like media literacy or general critical thinking skills, we should provide this information as a necessary part of teaching students to understand the systems that run the world around them. It’s essential that concerns like ethics and systemic biases be incorporated into any education about technology systems.
 Applied CS over theory: A lot of yesterday’s computer science programs emphasized abstract concepts that could often be hard to translate into practical impact. Given that more students have access to technology in their everyday lives than ever before, recontextualizing CS education to connect directly to the tools and devices they already use can ensure that what we’re teaching is relevant. By analogy, we’re going to need a lot more electricians than electrical engineers, even if we know that the two related disciplines are both important and valuable.
 Jobs in every industry, not tech startups: While we shouldn’t add to curriculum simply to satisfy the demands of industry, it’s reasonable to want to make sure education can translate into real-world jobs. The vast majority of technology jobs, both today and in the future, are outside of the signature startups and tech titans of Silicon Valley, in technical roles in companies that are otherwise not seen as being primarily in “tech”. These jobs may not have the high profile of Google or Facebook, but companies with a longer track record are likely to be stable, more geographically distributed, and aligned with the career and life goals of a broader swath of the population. We can de-emphasize the high-risk startup style of tech employment in favor of a much more accommodating style that could be described as blue-collar coding.
 It’s not about making more programmers: While a lot of young people who learn about computer science may choose to go into programming or engineering or related disciplines, we should not design curricula with the goal of turning everyone into a coder. Every industry, every creative discipline, every line of work from farming to fashion, engineering to english, management to marketing, can be improved by including insights provided by being deeply technologically literate. It’s possible to teach computer science in a way where it amplifies the interests and ambitions that young people have in any discipline, and unlocks their full potential in whatever field they find meaningful.
