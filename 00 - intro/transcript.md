@@ -174,6 +174,15 @@ Natural Language - Siri Cortana, artificial intelligence needs less formal gramm
 Sending command to siri is really running a program with different inputs. Show me a map of Newcastle city centre and show me a map of France are the same command (Show me a map), it's just the "Which Map" or which part of the map that changes.
 
 
+
+### Voyager
+
+Two of the oldest computers (and computer programs) still around are by now about 13 billion miles away at the very edge
+of our solar system. They are the Voyager 1 and 2 spacecraft that were built in the 1970s and launched to tour the solar system. Each had a total amount of memory less than the picture you are looking at now (63 kilobytes) and were engineered to constantly overwrite data with new data once the old data was sent back to earth.
+
+
+
+
 ## Type of Programs
 
 Batches - payroll, cheques, banks - overnight runs
@@ -190,6 +199,11 @@ Compiled programs
 
 Microbit. Kind that run on the mars rover and need very precise control of parameters, built once and loaded onto the platform. Run quickly with minimum of overhead. Harder to write correctly but effort can be worth it.
 
+
+
+http://eniacprogrammers.org/
+
+
 ## Notable people
 
 A lot of the history of computers can seem like it's based around men and technology is only for young boys and men.  It's true that silicon valley and the tech industry does suffer from this kind of bias but historically that's not been true. As we go through I'd like to call out some of the areas tying into popular culture where women made notable contributions. This is not an exhaustive list but it's ammunition for arguments and resistance you might encounter for "it's just not for me".
@@ -198,18 +212,35 @@ A lot of the history of computers can seem like it's based around men and techno
 
 Wife and Mother, Admiral in the US Navy. Invented the first compiler. Helped to invent the first "high level" language - Cobol.
 
+"Nobody believed it. I had a running compiler and nobody would touch it. They carefully told me, computers only do arithmetic; they could not do programs."
+
+
+Was at Harvard when the first bug was documented and popularised the term in relation to computing.
+
+"The most important thing I’ve accomplished, other than building the compiler, is training young people. They come to me, you know, and say, ‘Do you think we can do this?’ I say, “Try it.” And I back ’em up. They need that. I keep track of them as they get older and I stir ’em up at intervals so they don’t forget to take chances"
+
+Retired from the Navy at 80 as an admiral.
+
+
 ## Margaret Hamilton
 
 Managed project to calculate moon landing, running a progam on a computer 1 million times less powerful than the mobile phone you have in your pocket.
 
+Nearly didn't land on the moon. Aldrin found switch had been misplaced and meant program was getting too much information than it should have been getting. Margaret's program recognized the problem, shut down the misbehaving parts and continued with the most important tasks - calculating the landing.
+
+
 
 ## Katherine Johnson
 
-Calculations to take rocket to the moon.
+Unsung maths hero and programmer, calculations of trajectories used throughout the space program. Mercury 1950-60s, Apollo in the 60-70s up to space shuttle missions in the 80s. First human in space, first human in space, first humans on the moon. Calculated trajectories to go earth to moon and back again. Difficult to do since, earth, moon, sun are all moving in space, plus rocket is moving too.
+
+“I felt most proud of the success of the Apollo mission. They were going to the moon and I computed the path to get there.”
 
 
+### Jean Bartik
 
-### M
+“I was told I’d never make VP rank because I was too outspoken. Maybe so, but I think men will always find an excuse for keeping women in their ‘place’. So, let’s make that place the executive suite and start more of our own companies.” – Jean Bartik
+
 
 
 

@@ -83,6 +83,7 @@ exact positions, exact commands. High level vs low level languages.
 
 Can we divide a chocolate bar into 12 equal pieces. How do we do that? What would be the process for doing it. Can the students write down a process to do it. Can it be generalised to work with any size of bar and any number of pieces? What are the limits? Odd even numbers? Physical size?
 
+
 We've been talking about algorithms.
 
 What makes a good algorithm. If you are making lunch for yourself, how long it takes could be your only requirement. You might be hungry. If you are a chef trying to feed 1000 people at a banquet and have to coordinate 100 kitchen staff, efficiency and speed might not be the consideration you choose. What if
