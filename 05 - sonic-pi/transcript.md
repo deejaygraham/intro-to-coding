@@ -300,6 +300,7 @@ algorithms to vary the music.
 ~~~
 
 use_bpm 52
+use_synth :piano
 
 live_loop :bass do
   [:d2, :a2, :b2, :g2].each do |note|
