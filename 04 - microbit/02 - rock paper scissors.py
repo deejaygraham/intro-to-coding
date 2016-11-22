@@ -4,58 +4,36 @@
 # a shape at random.
 
 from microbit import *
-
 import random
 
-def display_count_down(fromValue):
-    for i in range(fromValue, 0, -1):
-        display.show(str(i))
-        sleep(1000)
-
-show_pic_for = 1000
-# create shapes
-
-# rock
+# Images of R, P and S
 rock = Image("00000:"
              "09990:"
              "90009:"
              "92229:"
              "29992")
  
-# paper
 paper = Image("99950:"
               "90992:"
               "90092:"
               "90092:"
               "99992")
 
-# scissors
 scissors = Image("90009:"
                  "09090:"
                  "00900:"
                  "55055:"
                  "55055")
 
+rock_paper_scissors = [ rock, paper, scissors ]
 
+display.show(rock_paper_scissors, delay = 500)
+display.clear()
 
 while True:
     
-    # Show countdown
-    #display_count_down(3)
-    display.clear()
-
-    #if accelerometer.was_gesture("shake"):
-    #display.clear()
-    #sleep(1000)
-        
-    choice = random.randrange(3)
-        
-    if choice == 0:
-        display.show(rock)
-    elif choice == 1:
-        display.show(paper)
-    elif choice == 2:
-        display.show(scissors)
-            
-    sleep (show_pic_for)
-
+    if accelerometer.was_gesture("shake"):   
+        one_of_them = random.choice(rock_paper_scissors)
+        display.show(one_of_them)
+        sleep (3000)
+        display.clear()
