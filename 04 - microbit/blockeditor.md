@@ -34,4 +34,7 @@ Nice thing about the microbit is that it is so friendly and easy to get going.
 If you want to run on an actual device you can't run it from the browser, you need to
 download a file and send it to the actual device.
 
-Let's see some code that matches the blinky light program. Here I am trying to 
+Let's see some code that matches the blinky light program. Here I am trying to
+turn all lights on and flash them. I can play with the lights to get them doing other things.
+
+Turn it on as a road sign -> blinking on and off.
