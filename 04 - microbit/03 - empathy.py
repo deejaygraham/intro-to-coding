@@ -1,7 +1,18 @@
-# micro:bit empathy.
+# micro:bit empathy
+
+# Displays a static block in centre of display.
+# When shaken, uses radio to send a message
+# to surrounding microbits. Any microbit receiving
+# the message will shake their own block for a
+# few seconds
+
 import radio
 import random
 from microbit import *
+
+emotions = [Image.HAPPY, Image.ASLEEP, Image.SAD, Image.SURPRISED, Image.CONFUSED, Image.MEH, Image.DUCK]
+current_emotion = 0
+
 
 centre_cube = Image(
             "00000:"
@@ -30,15 +41,24 @@ radio.on()
 
 while True:
 
-    display.show(centre_cube)
+    display.clear()
+
+    if button_a.was_pressed():
+        #display.scroll('A')
+        ship = move_ship_left(ship)
+        #display.scroll(str(ship[0]) + ' ' + str(ship[1]))
+    elif button_b.was_pressed():
+
+        
+#    display.show(centre_cube)
 
     # Shake to send a message
-    if accelerometer.was_gesture("shake"):
-        radio.send('shake')
-        sleep(5000)
-        for i in range(1, 5):
-            display.show(shake_frames) #, delay=200, wait=False)
-        sleep(200)
+#    if accelerometer.was_gesture("shake"):
+#        radio.send('shake')
+#        sleep(5000)
+#        for i in range(1, 5):
+#            display.show(shake_frames) #, delay=200, wait=False)
+#        sleep(200)
 
 
     # Shake to send a message
@@ -52,3 +72,6 @@ while True:
 #        for i in range(1, 5):
 #            display.show(shake_frames) #, delay=200, wait=False)
 #        sleep(200)
+
+# press button a to find your emotion. Send that using button b
+# anyone can receive that emotion.
