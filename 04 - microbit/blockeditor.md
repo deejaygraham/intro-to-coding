@@ -1,4 +1,15 @@
+
+
+
+What is it?
+
+https://www.youtube.com/watch?v=Wuza5WXiMkc
+
+
+
+https://pxt.microbit.org/
 http://microbit.org/code/
+
 
 Choose the Microsoft Block Editor - which works in the browser and is very similar to
 scratch.
