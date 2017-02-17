@@ -1,79 +1,98 @@
-# micro:bit empathy
+# micro:bit emotion
 
-# Displays a static block in centre of display.
-# When shaken, uses radio to send a message
-# to surrounding microbits. Any microbit receiving
-# the message will shake their own block for a
-# few seconds
+# Communicate your emotion to another microbit
 
 import radio
 import random
 from microbit import *
 
-#emotions = [Image.HAPPY, Image.ASLEEP, Image.SAD, Image.SURPRISED, Image.CONFUSED, Image.MEH, Image.DUCK]
+# name image pairs
+emotions = [
 
-#current_emotion = 0
+    ['happy', Image.HAPPY],
+    ['sleepy', Image.ASLEEP],
+    ['sad', Image.SAD],
+    ['surprised', Image.SURPRISED],
+    ['confused', Image.CONFUSED],
+    ['meh', Image.MEH],
+    ['duck', Image.DUCK]
+]
 
+emotion_count = len(emotions)
 
-centre_cube = Image(
+current_emotion = 0
+
+square1 = Image(
             "00000:"
-            "09990:"
-            "09990:"
-            "09990:"
-            "00000")
+            "00000:"
+            "00000:"
+            "00000:"
+            "90000")
 
-left_cube = Image(
+square2 = Image(
+            "00000:"
+            "00000:"
+            "00000:"
+            "99000:"
+            "09000")
+
+square3 = Image(
+            "00000:"
             "00000:"
             "99900:"
-            "99900:"
-            "99900:"
-            "00000")
+            "00900:"
+            "00900")
 
-right_cube = Image(
+square4 = Image(
             "00000:"
-            "00999:"
-            "00999:"
-            "00999:"
-            "00000")
+            "99990:"
+            "00090:"
+            "00090:"
+            "00090")
 
-shake_frames = [centre_cube, left_cube, centre_cube, right_cube]
+square5 = Image(
+            "99999:"
+            "00009:"
+            "00009:"
+            "00009:"
+            "00009")
+
+
+incoming_msg = [square1, square2, square3, square4, square5]
 
 radio.on()
 display.clear()
 
+simulate_msg = 0
+
 while True:
 
-    display.show(emotions[current_emotion])
-
+    display.show(emotions[current_emotion][1])
+    
     # select an emotion
     if button_a.was_pressed():
-
+        current_emotion += 1
+        if current_emotion >= emotion_count:
+            current_emotion = 0
+            
     # send that emotion
     elif button_b.was_pressed():
-        radio.send('')
-
-#    display.show(centre_cube)
-
-    # Shake to send a message
-#    if accelerometer.was_gesture("shake"):
-#        radio.send('shake')
-#        sleep(5000)
-#        for i in range(1, 5):
-#            display.show(shake_frames) #, delay=200, wait=False)
-#        sleep(200)
-
-
-    # Shake to send a message
-#    if accelerometer.was_gesture("shake"):
-#        radio.send('shake')
-
+        radio.send(emotions[current_emotion][0])
+        simulate_msg = 1
+        
     # Read any incoming messages.
-#    incoming = radio.receive()
-#    if incoming == 'shake':
-#        sleep(200)
-#        for i in range(1, 5):
-#            display.show(shake_frames) #, delay=200, wait=False)
-#        sleep(200)
-
-# press button a to find your emotion. Send that using button b
-# anyone can receive that emotion.
+    message = radio.receive()
+    
+    if simulate_msg == 1:
+        message = random.choice(emotions)[0]
+        simulate_msg = 0
+        
+    find_emotion = 0
+    for emotion in emotions:
+        if message == emotion[0]:
+            current_emotion = find_emotion
+            display.show(incoming_msg, delay=50)
+            display.clear()
+            sleep(100)
+        find_emotion += 1        
+         
