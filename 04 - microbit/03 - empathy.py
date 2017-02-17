@@ -31,7 +31,7 @@ right_cube = Image(
             "00999:"
             "00000")
 
-shake_frames = [centre_cube, left_cube, centre_cube, right_cube]
+shake_frames = [centre_cube, left_cube, right_cube]
 
 radio.on()
 
@@ -42,23 +42,10 @@ while True:
     # Shake to send a message
     if accelerometer.was_gesture("shake"):
         radio.send('shake')
-        sleep(5000)
-        for i in range(1, 5):
-            display.show(shake_frames) #, delay=200, wait=False)
-        sleep(200)
-
-
-    # Shake to send a message
-#    if accelerometer.was_gesture("shake"):
-#        radio.send('shake')
-
+        
     # Read any incoming messages.
-#    incoming = radio.receive()
-#    if incoming == 'shake':
-#        sleep(200)
-#        for i in range(1, 5):
-#            display.show(shake_frames) #, delay=200, wait=False)
-#        sleep(200)
-
-# press button a to find your emotion. Send that using button b
-# anyone can receive that emotion.
+    message = radio.receive()
+    if message == 'shake':
+        for i in range(1, 5):
+            display.show(shake_frames, delay=50) #, delay=200, wait=False)
+        
