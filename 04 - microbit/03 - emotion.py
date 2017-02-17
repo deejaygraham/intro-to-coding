@@ -10,6 +10,11 @@ import radio
 import random
 from microbit import *
 
+#emotions = [Image.HAPPY, Image.ASLEEP, Image.SAD, Image.SURPRISED, Image.CONFUSED, Image.MEH, Image.DUCK]
+
+#current_emotion = 0
+
+
 centre_cube = Image(
             "00000:"
             "09990:"
@@ -34,18 +39,28 @@ right_cube = Image(
 shake_frames = [centre_cube, left_cube, centre_cube, right_cube]
 
 radio.on()
+display.clear()
 
 while True:
 
-    display.show(centre_cube)
+    display.show(emotions[current_emotion])
+
+    # select an emotion
+    if button_a.was_pressed():
+
+    # send that emotion
+    elif button_b.was_pressed():
+        radio.send('')
+
+#    display.show(centre_cube)
 
     # Shake to send a message
-    if accelerometer.was_gesture("shake"):
-        radio.send('shake')
-        sleep(5000)
-        for i in range(1, 5):
-            display.show(shake_frames) #, delay=200, wait=False)
-        sleep(200)
+#    if accelerometer.was_gesture("shake"):
+#        radio.send('shake')
+#        sleep(5000)
+#        for i in range(1, 5):
+#            display.show(shake_frames) #, delay=200, wait=False)
+#        sleep(200)
 
 
     # Shake to send a message
