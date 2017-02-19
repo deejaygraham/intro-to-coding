@@ -63,30 +63,23 @@ incoming_msg = [square1, square2, square3, square4, square5]
 radio.on()
 display.clear()
 
-simulate_msg = 0
-
 while True:
 
     display.show(emotions[current_emotion][1])
-    
+
     # select an emotion
     if button_a.was_pressed():
         current_emotion += 1
         if current_emotion >= emotion_count:
             current_emotion = 0
-            
+
     # send that emotion
     elif button_b.was_pressed():
         radio.send(emotions[current_emotion][0])
-        simulate_msg = 1
-        
+
     # Read any incoming messages.
     message = radio.receive()
-    
-    if simulate_msg == 1:
-        message = random.choice(emotions)[0]
-        simulate_msg = 0
-        
+
     find_emotion = 0
     for emotion in emotions:
         if message == emotion[0]:
@@ -94,5 +87,4 @@ while True:
             display.show(incoming_msg, delay=50)
             display.clear()
             sleep(100)
-        find_emotion += 1        
-         
+        find_emotion += 1
