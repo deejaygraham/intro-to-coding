@@ -1,11 +1,11 @@
 from microbit import *
 
 lights_on = Image(
-            "99999:"
-            "99999:"
-            "99999:"
-            "99999:"
-            "99999")
+            "90000:"
+            "09000:"
+            "00900:"
+            "00090:"
+            "00009")
 
 while True:
     display.show(lights_on)
