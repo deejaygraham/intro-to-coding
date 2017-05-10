@@ -4,6 +4,7 @@
 # Plug in microbit to usb port
 
 # look for tty entry e.g. ttyACM0 is /dev/ttyACM0
+# ls /dev/ttyA*
 
 # install pyserial
 # sudo apt-get install python-pyserial

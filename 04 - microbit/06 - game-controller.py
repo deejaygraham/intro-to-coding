@@ -1,7 +1,14 @@
 from microbit import *
 
-x_tilt_limit = 500
-y_tilt_limit = 500
+# accelerometer readings are +- 1000
+forty_five_degrees = 500
+
+x_tilt_limit = forty_five_degrees
+y_tilt_limit = forty_five_degrees
+
+# blink one pixel to show the controller is alive
+watch_dog_pixel = Image("00000:00000:00600:00000:00000")
+watch_dog_flash = [watch_dog_pixel, Image()]
 
 def read_orientation():
 
@@ -35,21 +42,10 @@ def read_buttons():
 
     return buttons
 
-# blink one pixel to show the controller is alive
-def watch_dog():
-
-    centre_pixel = [2, 2]
-    brightness = display.get_pixel(centre_pixel[0], centre_pixel[0])
-
-    if brightness == 0:
-        brightness = 9
-    else:
-        brightness = 0
-
-    display.set_pixel(centre_pixel[0], centre_pixel[0], brightness)
-
 def write_to_serial_port(data):
     print(data)
+
+display.show(watch_dog_flash, loop=True, wait=False, delay=1000)
 
 # Main game loop
 while True:
@@ -61,5 +57,4 @@ while True:
   if len(serial_data) > 0:
     write_to_serial_port(serial_data)
 
-  watch_dog()
   sleep(100)
