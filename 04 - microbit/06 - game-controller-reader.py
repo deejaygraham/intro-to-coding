@@ -4,7 +4,8 @@
 # Plug in microbit to usb port
 
 # look for tty entry e.g. ttyACM0 is /dev/ttyACM0
-# ls /dev/ttyA*
+# ls /dev/tty* twice once unplugged, once plugged in and look for differences.
+# or on my macbook /dev/tty.usbmodem1422
 
 # install pyserial
 # sudo apt-get install python-pyserial
