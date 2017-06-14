@@ -1,6 +1,9 @@
+# speaker on 0 and 1
+
 # DALEK poetry generator, by The Doctor
 import speech
-import random
+import ra
+ndom
 from microbit import sleep
 
 # Randomly select fragments to interpolate into the template.
