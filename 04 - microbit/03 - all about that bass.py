@@ -45,3 +45,31 @@ while True:
   music.play(sheSaid) #"So, if that's what's you're into Then go ahead and move-"
   music.play(along) #"Along"
   music.play("r:12") #Rest for the remaining bar
+    
+    
+#The bridge bassline of All about that Bass by Meghan Trainor.
+#Coded by Ben Mustill-Rose and Nicholas Tollervey.
+from microbit import *
+#As we're going to be playing music we'll need to import the music module:
+import music
+
+#All music has a tempo (how fast it is played) often given in beats per minute or BPM
+#The tempo of All About That Bass is approximately 135BPM.
+music.set_tempo(bpm=135)
+
+bassline = [
+    'r:12',
+    'a1:6', 'c2:2', 'c#', 'e:4', 'c#:2',
+    'a1:4', 'r:12',
+    'b1:6', 'c#2:2', 'd', 'f#:4', 'd:2',
+    'b1:4', 'r:12',
+    'e1:6', 'g:2', 'g#', 'b:4', 'g#:2',
+    'e:4', 'r:12',
+    'a1:6', 'c2:2', 'c#', 'e:4', 'c#:2',
+    'a1:4'
+    ] 
+
+#We're keeping this code so simple, we're even going to skip 'while True'!
+#Playing music can be looped forever by adding 'loop=True':
+music.play(bassline, loop=True)
+
