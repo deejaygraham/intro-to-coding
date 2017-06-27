@@ -2,8 +2,7 @@
 
 # DALEK poetry generator, by The Doctor
 import speech
-import ra
-ndom
+import random
 from microbit import sleep
 
 # Randomly select fragments to interpolate into the template.
