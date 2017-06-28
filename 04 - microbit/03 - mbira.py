@@ -3,6 +3,9 @@
 from microbit import *
 import music
 
+lownote= ["c4:4"]
+highnote = ["c5:4"]
+
 while True:
     if pin1.is_touched() and pin2.is_touched():
         tune = ["C4:4", "D4:4", "G4:8"]
