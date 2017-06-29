@@ -3,7 +3,6 @@ from microbit import *
 import music
 
 frequency = 440 # concert a
-sprite = [2, 2]
 
 while True:
 
@@ -27,5 +26,8 @@ while True:
     x_offset = x * 100
     y_offset = y * 500
     offset = x_offset + y_offset
-    music.pitch(440 + offset) # a +
+    
+    music.pitch(440 + int(offset)) # a +
     sleep(100)
+
+    # extend to use notes from a scale 
