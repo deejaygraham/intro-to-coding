@@ -9,59 +9,27 @@ from microbit import *
 # name image pairs
 emotions = [
 
-    ['happy', Image.HAPPY],
-    ['sleepy', Image.ASLEEP],
-    ['sad', Image.SAD],
-    ['surprised', Image.SURPRISED],
-    ['confused', Image.CONFUSED],
-    ['meh', Image.MEH],
-    ['duck', Image.DUCK]
+    ['happy',       Image.HAPPY],
+    ['sleepy',      Image.ASLEEP],
+    ['sad',         Image.SAD],
+    ['surprised',   Image.SURPRISED],
+    ['confused',    Image.CONFUSED],
+    ['meh',         Image.MEH],
+    ['duck',        Image.DUCK]
 ]
 
 emotion_count = len(emotions)
 
 current_emotion = 0
 
-square1 = Image(
-            "00000:"
-            "00000:"
-            "00000:"
-            "00000:"
-            "90000")
-
-square2 = Image(
-            "00000:"
-            "00000:"
-            "00000:"
-            "99000:"
-            "09000")
-
-square3 = Image(
-            "00000:"
-            "00000:"
-            "99900:"
-            "00900:"
-            "00900")
-
-square4 = Image(
-            "00000:"
-            "99990:"
-            "00090:"
-            "00090:"
-            "00090")
-
-square5 = Image(
-            "99999:"
-            "00009:"
-            "00009:"
-            "00009:"
-            "00009")
-
-
+square1 = Image("00000:00000:00000:00000:90000")
+square2 = Image("00000:00000:00000:99000:09000")
+square3 = Image("00000:00000:99900:00900:00900")
+square4 = Image("00000:99990:00090:00090:00090")
+square5 = Image("99999:00009:00009:00009:00009")
 incoming_msg = [square1, square2, square3, square4, square5]
 
 radio.on()
-display.clear()
 
 while True:
 
