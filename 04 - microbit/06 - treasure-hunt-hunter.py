@@ -1,5 +1,6 @@
 # Treasure Hunt Clue Receiver
 from microbit import *
+import radio
 
 # starting clue
 clue = "Walk around to find the first clue"
