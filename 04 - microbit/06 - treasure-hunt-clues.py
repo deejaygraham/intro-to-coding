@@ -1,5 +1,6 @@
 # Treasure Hunt Clue Beacon
 from microbit import *
+import radio
 
 # Starting image
 skull = Image("09990:90909:99099:99999:04440")
