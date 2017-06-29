@@ -3,20 +3,25 @@
 from microbit import *
 import music
 
-lownote= ["c4:4"]
-highnote = ["c5:4"]
-
+# twinkle twinkle 
 while True:
     if pin1.is_touched() and pin2.is_touched():
-        tune = ["C4:4", "D4:4", "G4:8"]
+        tune = ["C4:4"]
         music.play(tune)
     elif pin1.is_touched():
-        tune = ["C3:4", "D3:4", "G4:8"]
+        tune = ["G4:4"]
         music.play(tune)
     elif pin2.is_touched():
-        music.play(music.BADDY)
+        tune = ["A4:4"]
+        music.play(tune)
+    elif button_a.was_pressed():
+        tune = ["F4:4"]
+        music.play(tune)
+    elif button_b.was_pressed():
+        tune = ["E4:4"]
+        music.play(tune)
         
-    sleep(500)
+    sleep(100)
     
     # adjust speed of playback
     # incorporate gestures? difficult with wiring?
