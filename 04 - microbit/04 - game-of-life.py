@@ -28,9 +28,10 @@ random_population_pc = 50
 dead_cell = 0 # debug set to 2 to see all dimly lit.
 live_cell = 9
 
+
 # is this x, y location on the board?
-def is_legal_location(x, y):
-    return 0 <= x < width && 0 <= y < height
+def is_legal_location(x, y, population):
+    return 0 <= x and x < width and 0 <= y and y < height
 
 # ugly but works with microbit
 # tried list comprehensions to be more pyton-y
